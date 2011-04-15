@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.geometry.Geometry &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.light" href="collada.light.html" />
+    <link rel="prev" title="collada.geometry.BoundGeometry" href="collada.geometry.BoundGeometry.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.light.html" title="collada.light"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.geometry.BoundGeometry.html" title="collada.geometry.BoundGeometry"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.geometry.BoundGeometry.html"
+                        title="previous chapter">collada.geometry.BoundGeometry</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.light.html"
+                        title="next chapter">collada.light</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.geometry.Geometry.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-geometry-geometry">
+<h1>collada.geometry.Geometry<a class="headerlink" href="#collada-geometry-geometry" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="collada.geometry.Geometry">
+<em class="property">class </em><tt class="descclassname">collada.geometry.</tt><tt class="descname">Geometry</tt><big>(</big><em>collada</em>, <em>id</em>, <em>name</em>, <em>sourcebyid</em>, <em>primitives=None</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="collada.DaeObject.html#collada.DaeObject" title="collada.DaeObject"><tt class="xref py py-class docutils literal"><span class="pre">collada.DaeObject</span></tt></a></p>
+<p>A class containing the data coming from a COLLADA &lt;geometry&gt; tag</p>
+<p class="graphviz">
+<img src="../../_images/inheritance-579371a5cce340e69b4f7cfdacf9fb404b34056d.png" alt="Inheritance diagram of collada.geometry" usemap="#inheritance87a6a58755" class="inheritance"/>
+<map id="inheritance87a6a58755" name="inheritance87a6a58755">
+<area shape="rect" id="node1" href="collada.geometry.BoundGeometry.html#collada.geometry.BoundGeometry" title="BoundGeometry" alt="" coords="7,55,132,83"/>
+<area shape="rect" id="node2" href="#collada.geometry.Geometry" title="Geometry" alt="" coords="183,5,268,33"/>
+<area shape="rect" id="node3" href="collada.DaeObject.html#collada.DaeObject" title="DaeObject" alt="" coords="25,5,113,33"/>
+</map>
+</p>
+<dl class="method">
+<dt id="collada.geometry.Geometry.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>collada</em>, <em>id</em>, <em>name</em>, <em>sourcebyid</em>, <em>primitives=None</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a geometry instance</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>collada</strong> (<a class="reference internal" href="collada.Collada.html#collada.Collada" title="collada.Collada"><em>collada.Collada</em></a>) &#8211; The collada object this geometry belongs to</li>
+<li><strong>id</strong> (<em>str</em>) &#8211; A unique string identifier for the geometry</li>
+<li><strong>name</strong> (<em>str</em>) &#8211; A text string naming the geometry</li>
+<li><strong>sourcebyid</strong> &#8211; A list of <a class="reference internal" href="collada.source.Source.html#collada.source.Source" title="collada.source.Source"><tt class="xref py py-class docutils literal"><span class="pre">collada.source.Source</span></tt></a> objects or
+a dictionary mapping source ids to the actual objects</li>
+<li><strong>primitives</strong> (<em>list</em>) &#8211; List of primitive objects contained within the geometry.
+Do not set this argument manually. Instead, create a
+<a class="reference internal" href="#collada.geometry.Geometry" title="collada.geometry.Geometry"><tt class="xref py py-class docutils literal"><span class="pre">collada.geometry.Geometry</span></tt></a> first and then append
+to <a class="reference internal" href="#collada.geometry.Geometry.primitives" title="collada.geometry.Geometry.primitives"><tt class="xref py py-attr docutils literal"><span class="pre">primitives</span></tt></a> with the <cite>create*</cite> functions.</li>
+<li><strong>xmlnode</strong> &#8211; When loaded, the xmlnode it comes from.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.geometry.Geometry.__init__" title="collada.geometry.Geometry.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>(collada,&nbsp;id,&nbsp;name,&nbsp;sourcebyid[,&nbsp;...])</td>
+<td>Create a geometry instance</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.geometry.Geometry.bind" title="collada.geometry.Geometry.bind"><tt class="xref py py-obj docutils literal"><span class="pre">bind</span></tt></a>(matrix,&nbsp;materialnodebysymbol)</td>
+<td>Binds this geometry to a transform matrix and material mapping.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.geometry.Geometry.createLineSet" title="collada.geometry.Geometry.createLineSet"><tt class="xref py py-obj docutils literal"><span class="pre">createLineSet</span></tt></a>(indices,&nbsp;inputlist,&nbsp;materialid)</td>
+<td>Create a set of lines for use in this geometry instance.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.geometry.Geometry.createPolylist" title="collada.geometry.Geometry.createPolylist"><tt class="xref py py-obj docutils literal"><span class="pre">createPolylist</span></tt></a>(indices,&nbsp;vcounts,&nbsp;inputlist,&nbsp;...)</td>
+<td>Create a polylist for use with this geometry instance.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.geometry.Geometry.createPolygons" title="collada.geometry.Geometry.createPolygons"><tt class="xref py py-obj docutils literal"><span class="pre">createPolygons</span></tt></a>(indices,&nbsp;inputlist,&nbsp;materialid)</td>
+<td>Create a polygons for use with this geometry instance.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.geometry.Geometry.createTriangleSet" title="collada.geometry.Geometry.createTriangleSet"><tt class="xref py py-obj docutils literal"><span class="pre">createTriangleSet</span></tt></a>(indices,&nbsp;inputlist,&nbsp;materialid)</td>
+<td>Create a set of triangles for use in this geometry instance.</td>
+</tr>
+<tr><td><tt class="xref py py-obj docutils literal"><span class="pre">load</span></tt>(collada,&nbsp;localscope,&nbsp;node)</td>
+<td></td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.geometry.Geometry.save" title="collada.geometry.Geometry.save"><tt class="xref py py-obj docutils literal"><span class="pre">save</span></tt></a>()</td>
+<td>Saves the geometry back to <a class="reference internal" href="#collada.geometry.Geometry.xmlnode" title="collada.geometry.Geometry.xmlnode"><tt class="xref py py-attr docutils literal"><span class="pre">xmlnode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="collada.geometry.Geometry.collada">
+<tt class="descname">collada</tt><a class="headerlink" href="#collada.geometry.Geometry.collada" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="collada.Collada.html#collada.Collada" title="collada.Collada"><tt class="xref py py-class docutils literal"><span class="pre">collada.Collada</span></tt></a> object this geometry belongs to</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.geometry.Geometry.id">
+<tt class="descname">id</tt><a class="headerlink" href="#collada.geometry.Geometry.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The unique string identifier for the geometry</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.geometry.Geometry.name">
+<tt class="descname">name</tt><a class="headerlink" href="#collada.geometry.Geometry.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The text string naming the geometry</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.geometry.Geometry.sourceById">
+<tt class="descname">sourceById</tt><a class="headerlink" href="#collada.geometry.Geometry.sourceById" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary containing <a class="reference internal" href="collada.source.Source.html#collada.source.Source" title="collada.source.Source"><tt class="xref py py-class docutils literal"><span class="pre">collada.source.Source</span></tt></a> objects indexed by their id.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.geometry.Geometry.primitives">
+<tt class="descname">primitives</tt><a class="headerlink" href="#collada.geometry.Geometry.primitives" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of primitives (base type <a class="reference internal" href="collada.primitive.Primitive.html#collada.primitive.Primitive" title="collada.primitive.Primitive"><tt class="xref py py-class docutils literal"><span class="pre">collada.primitive.Primitive</span></tt></a>) inside this geometry.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.geometry.Geometry.xmlnode">
+<tt class="descname">xmlnode</tt><a class="headerlink" href="#collada.geometry.Geometry.xmlnode" title="Permalink to this definition">¶</a></dt>
+<dd><p>ElementTree representation of the geometry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.geometry.Geometry.createLineSet">
+<tt class="descname">createLineSet</tt><big>(</big><em>indices</em>, <em>inputlist</em>, <em>materialid</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry.createLineSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a set of lines for use in this geometry instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>indices</strong> (<em>numpy.array</em>) &#8211; unshaped numpy array that contains the indices for
+the inputs referenced in inputlist</li>
+<li><strong>inputlist</strong> (<a class="reference internal" href="collada.source.InputList.html#collada.source.InputList" title="collada.source.InputList"><em>collada.source.InputList</em></a>) &#8211; The inputs for this primitive</li>
+<li><strong>materialid</strong> (<em>str</em>) &#8211; A string containing a symbol that will get used to bind this lineset
+to a material when instantiating into a scene</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="collada.lineset.LineSet.html#collada.lineset.LineSet" title="collada.lineset.LineSet"><tt class="xref py py-class docutils literal"><span class="pre">collada.lineset.LineSet</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.geometry.Geometry.createTriangleSet">
+<tt class="descname">createTriangleSet</tt><big>(</big><em>indices</em>, <em>inputlist</em>, <em>materialid</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry.createTriangleSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a set of triangles for use in this geometry instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>indices</strong> (<em>numpy.array</em>) &#8211; unshaped numpy array that contains the indices for
+the inputs referenced in inputlist</li>
+<li><strong>inputlist</strong> (<a class="reference internal" href="collada.source.InputList.html#collada.source.InputList" title="collada.source.InputList"><em>collada.source.InputList</em></a>) &#8211; The inputs for this primitive</li>
+<li><strong>materialid</strong> (<em>str</em>) &#8211; A string containing a symbol that will get used to bind this triangleset
+to a material when instantiating into a scene</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="collada.triangleset.TriangleSet.html#collada.triangleset.TriangleSet" title="collada.triangleset.TriangleSet"><tt class="xref py py-class docutils literal"><span class="pre">collada.triangleset.TriangleSet</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.geometry.Geometry.createPolylist">
+<tt class="descname">createPolylist</tt><big>(</big><em>indices</em>, <em>vcounts</em>, <em>inputlist</em>, <em>materialid</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry.createPolylist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a polylist for use with this geometry instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>indices</strong> (<em>numpy.array</em>) &#8211; unshaped numpy array that contains the indices for
+the inputs referenced in inputlist</li>
+<li><strong>vcounts</strong> (<em>numpy.array</em>) &#8211; unshaped numpy array that contains the vertex count
+for each polygon in this polylist</li>
+<li><strong>inputlist</strong> (<a class="reference internal" href="collada.source.InputList.html#collada.source.InputList" title="collada.source.InputList"><em>collada.source.InputList</em></a>) &#8211; The inputs for this primitive</li>
+<li><strong>materialid</strong> (<em>str</em>) &#8211; A string containing a symbol that will get used to bind this polylist
+to a material when instantiating into a scene</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="collada.polylist.Polylist.html#collada.polylist.Polylist" title="collada.polylist.Polylist"><tt class="xref py py-class docutils literal"><span class="pre">collada.polylist.Polylist</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.geometry.Geometry.createPolygons">
+<tt class="descname">createPolygons</tt><big>(</big><em>indices</em>, <em>inputlist</em>, <em>materialid</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry.createPolygons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a polygons for use with this geometry instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>indices</strong> (<em>numpy.array</em>) &#8211; list of unshaped numpy arrays that each contain the indices for
+a single polygon</li>
+<li><strong>inputlist</strong> (<a class="reference internal" href="collada.source.InputList.html#collada.source.InputList" title="collada.source.InputList"><em>collada.source.InputList</em></a>) &#8211; The inputs for this primitive</li>
+<li><strong>materialid</strong> (<em>str</em>) &#8211; A string containing a symbol that will get used to bind this polygons
+to a material when instantiating into a scene</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="collada.polygons.Polygons.html#collada.polygons.Polygons" title="collada.polygons.Polygons"><tt class="xref py py-class docutils literal"><span class="pre">collada.polygons.Polygons</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.geometry.Geometry.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.geometry.Geometry.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the geometry back to <a class="reference internal" href="#collada.geometry.Geometry.xmlnode" title="collada.geometry.Geometry.xmlnode"><tt class="xref py py-attr docutils literal"><span class="pre">xmlnode</span></tt></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.geometry.Geometry.bind">
+<tt class="descname">bind</tt><big>(</big><em>matrix</em>, <em>materialnodebysymbol</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry.bind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Binds this geometry to a transform matrix and material mapping.
+The geometry&#8217;s points get transformed by the given matrix and its
+inputs get mapped to the given materials.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>matrix</strong> (<em>numpy.array</em>) &#8211; A 4x4 numpy float matrix</li>
+<li><strong>materialnodebysymbol</strong> (<em>dict</em>) &#8211; A dictionary with the material symbols inside the primitive 
+assigned to <a class="reference internal" href="collada.scene.MaterialNode.html#collada.scene.MaterialNode" title="collada.scene.MaterialNode"><tt class="xref py py-class docutils literal"><span class="pre">collada.scene.MaterialNode</span></tt></a> defined in the
+scene</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="collada.geometry.BoundGeometry.html#collada.geometry.BoundGeometry" title="collada.geometry.BoundGeometry"><tt class="xref py py-class docutils literal"><span class="pre">collada.geometry.BoundGeometry</span></tt></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.light.html" title="collada.light"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.geometry.BoundGeometry.html" title="collada.geometry.BoundGeometry"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

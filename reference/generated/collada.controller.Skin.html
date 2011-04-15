@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.controller.Skin &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.geometry" href="collada.geometry.html" />
+    <link rel="prev" title="collada.controller.Morph" href="collada.controller.Morph.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.geometry.html" title="collada.geometry"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.controller.Morph.html" title="collada.controller.Morph"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.controller.Morph.html"
+                        title="previous chapter">collada.controller.Morph</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.geometry.html"
+                        title="next chapter">collada.geometry</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.controller.Skin.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-controller-skin">
+<h1>collada.controller.Skin<a class="headerlink" href="#collada-controller-skin" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="collada.controller.Skin">
+<em class="property">class </em><tt class="descclassname">collada.controller.</tt><tt class="descname">Skin</tt><big>(</big><em>sourcebyid</em>, <em>bind_shape_matrix</em>, <em>joint_source</em>, <em>joint_matrix_source</em>, <em>weight_source</em>, <em>weight_joint_source</em>, <em>vcounts</em>, <em>vertex_weight_index</em>, <em>offsets</em>, <em>geometry</em>, <em>controller_node=None</em>, <em>skin_node=None</em><big>)</big><a class="headerlink" href="#collada.controller.Skin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="collada.controller.Controller.html#collada.controller.Controller" title="collada.controller.Controller"><tt class="xref py py-class docutils literal"><span class="pre">collada.controller.Controller</span></tt></a></p>
+<p>Class containing data collada holds in the &lt;skin&gt; tag</p>
+<dl class="method">
+<dt id="collada.controller.Skin.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>sourcebyid</em>, <em>bind_shape_matrix</em>, <em>joint_source</em>, <em>joint_matrix_source</em>, <em>weight_source</em>, <em>weight_joint_source</em>, <em>vcounts</em>, <em>vertex_weight_index</em>, <em>offsets</em>, <em>geometry</em>, <em>controller_node=None</em>, <em>skin_node=None</em><big>)</big><a class="headerlink" href="#collada.controller.Skin.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a skin.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters :</th><td class="field-body"><dl class="first last docutils">
+<dt>sourceById </dt>
+<dd><p class="first last">A dict mapping id&#8217;s to a collada source</p>
+</dd>
+<dt>bind_shape_matrix</dt>
+<dd><p class="first last">A numpy array of floats (pre-shape)</p>
+</dd>
+<dt>joint_source</dt>
+<dd><p class="first last">The string id for the joint source</p>
+</dd>
+<dt>joint_matrix_source</dt>
+<dd><p class="first last">The string id for the joint matrix source</p>
+</dd>
+<dt>weight_source</dt>
+<dd><p class="first last">The string id for the weight source</p>
+</dd>
+<dt>weight_joint_source</dt>
+<dd><p class="first last">The string id for the joint source of weights</p>
+</dd>
+<dt>vcounts</dt>
+<dd><p class="first last">A list with the number of influences on each vertex</p>
+</dd>
+<dt>vertex_weight_index</dt>
+<dd><p class="first last">An array with the indexes as they come from &lt;v&gt; array</p>
+</dd>
+<dt>offsets</dt>
+<dd><p class="first last">A list with the offsets in the weight index array for each source
+in (joint, weight)</p>
+</dd>
+<dt>geometry</dt>
+<dd><p class="first last">The source geometry this should be applied to (geometry.Geometry)</p>
+</dd>
+<dt>controller_node</dt>
+<dd><p class="first last">XML node of the &lt;controller&gt; tag which is the parent of this</p>
+</dd>
+<dt>skin_node</dt>
+<dd><p class="first last">XML node of the &lt;skin&gt; tag if this is from there</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.controller.Skin.__init__" title="collada.controller.Skin.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>(sourcebyid,&nbsp;bind_shape_matrix,&nbsp;...)</td>
+<td>Create a skin.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.controller.Skin.bind" title="collada.controller.Skin.bind"><tt class="xref py py-obj docutils literal"><span class="pre">bind</span></tt></a>(matrix,&nbsp;materialnodebysymbol)</td>
+<td>Create a bound morph from this one, transform and material mapping</td>
+</tr>
+<tr><td><tt class="xref py py-obj docutils literal"><span class="pre">load</span></tt>(collada,&nbsp;localscope,&nbsp;skinnode,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.controller.Skin.save" title="collada.controller.Skin.save"><tt class="xref py py-obj docutils literal"><span class="pre">save</span></tt></a>()</td>
+<td>Put all the data to the internal xml node (xmlnode) so it can be serialized.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="collada.controller.Skin.bind">
+<tt class="descname">bind</tt><big>(</big><em>matrix</em>, <em>materialnodebysymbol</em><big>)</big><a class="headerlink" href="#collada.controller.Skin.bind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a bound morph from this one, transform and material mapping</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.controller.Skin.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.controller.Skin.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Put all the data to the internal xml node (xmlnode) so it can be serialized.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.geometry.html" title="collada.geometry"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.controller.Morph.html" title="collada.controller.Morph"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

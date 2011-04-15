@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.triangleset.BoundTriangleSet &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.triangleset.Triangle" href="collada.triangleset.Triangle.html" />
+    <link rel="prev" title="collada.triangleset" href="collada.triangleset.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.triangleset.Triangle.html" title="collada.triangleset.Triangle"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.triangleset.html" title="collada.triangleset"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.triangleset.html"
+                        title="previous chapter">collada.triangleset</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.triangleset.Triangle.html"
+                        title="next chapter">collada.triangleset.Triangle</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.triangleset.BoundTriangleSet.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-triangleset-boundtriangleset">
+<h1>collada.triangleset.BoundTriangleSet<a class="headerlink" href="#collada-triangleset-boundtriangleset" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="collada.triangleset.BoundTriangleSet">
+<em class="property">class </em><tt class="descclassname">collada.triangleset.</tt><tt class="descname">BoundTriangleSet</tt><big>(</big><em>ts</em>, <em>matrix</em>, <em>materialnodebysymbol</em><big>)</big><a class="headerlink" href="#collada.triangleset.BoundTriangleSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="collada.primitive.BoundPrimitive.html#collada.primitive.BoundPrimitive" title="collada.primitive.BoundPrimitive"><tt class="xref py py-class docutils literal"><span class="pre">collada.primitive.BoundPrimitive</span></tt></a></p>
+<p>A triangle set bound to a transform matrix and materials mapping.</p>
+<ul class="simple">
+<li>If <tt class="docutils literal"><span class="pre">T</span></tt> is an instance of <a class="reference internal" href="#collada.triangleset.BoundTriangleSet" title="collada.triangleset.BoundTriangleSet"><tt class="xref py py-class docutils literal"><span class="pre">collada.triangleset.BoundTriangleSet</span></tt></a>, then <tt class="docutils literal"><span class="pre">len(T)</span></tt>
+returns the number of triangles in the set. <tt class="docutils literal"><span class="pre">T[i]</span></tt> returns the i<sup>th</sup>
+triangle in the set.</li>
+</ul>
+<p class="graphviz">
+<img src="../../_images/inheritance-02723aed9839a7c0cab5eb317c5be135f0b2b959.png" alt="Inheritance diagram of collada.lineset.BoundLineSet, collada.triangleset.BoundTriangleSet, collada.polylist.BoundPolylist, collada.polygons.BoundPolygons" usemap="#inheritancee2f7590ba7" class="inheritance"/>
+<map id="inheritancee2f7590ba7" name="inheritancee2f7590ba7">
+<area shape="rect" id="node1" href="collada.lineset.BoundLineSet.html#collada.lineset.BoundLineSet" title="BoundLineSet" alt="" coords="185,5,295,33"/>
+<area shape="rect" id="node2" href="collada.primitive.BoundPrimitive.html#collada.primitive.BoundPrimitive" title="BoundPrimitive" alt="" coords="7,55,124,83"/>
+<area shape="rect" id="node4" href="collada.polylist.BoundPolylist.html#collada.polylist.BoundPolylist" title="BoundPolylist" alt="" coords="187,55,293,83"/>
+<area shape="rect" id="node6" href="#collada.triangleset.BoundTriangleSet" title="BoundTriangleSet" alt="" coords="173,106,307,134"/>
+<area shape="rect" id="node8" href="collada.polygons.BoundPolygons.html#collada.polygons.BoundPolygons" title="BoundPolygons" alt="" coords="355,55,475,83"/>
+</map>
+</p>
+<dl class="method">
+<dt id="collada.triangleset.BoundTriangleSet.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>ts</em>, <em>matrix</em>, <em>materialnodebysymbol</em><big>)</big><a class="headerlink" href="#collada.triangleset.BoundTriangleSet.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a bound triangle set from a triangle set, transform and material mapping.
+This gets created when a triangle set is instantiated in a scene. Do not create this manually.</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.triangleset.BoundTriangleSet.__init__" title="collada.triangleset.BoundTriangleSet.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>(ts,&nbsp;matrix,&nbsp;materialnodebysymbol)</td>
+<td>Create a bound triangle set from a triangle set, transform and material mapping.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.triangleset.BoundTriangleSet.generateNormals" title="collada.triangleset.BoundTriangleSet.generateNormals"><tt class="xref py py-obj docutils literal"><span class="pre">generateNormals</span></tt></a>()</td>
+<td>If <tt class="xref py py-attr docutils literal"><span class="pre">normals</span></tt> is <cite>None</cite> or you wish for normals to be</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.triangleset.BoundTriangleSet.shapes" title="collada.triangleset.BoundTriangleSet.shapes"><tt class="xref py py-obj docutils literal"><span class="pre">shapes</span></tt></a>()</td>
+<td>Iterate through all the triangles contained in the set.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.triangleset.BoundTriangleSet.triangles" title="collada.triangleset.BoundTriangleSet.triangles"><tt class="xref py py-obj docutils literal"><span class="pre">triangles</span></tt></a>()</td>
+<td>Iterate through all the triangles contained in the set.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.triangleset.BoundTriangleSet.normal" title="collada.triangleset.BoundTriangleSet.normal"><tt class="xref py py-obj docutils literal"><span class="pre">normal</span></tt></a></td>
+<td>Read-only numpy.array of size Nx3 where N is the number of normal values in the</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.triangleset.BoundTriangleSet.normal_index" title="collada.triangleset.BoundTriangleSet.normal_index"><tt class="xref py py-obj docutils literal"><span class="pre">normal_index</span></tt></a></td>
+<td>Read-only numpy.array of size Nx3 where N is the number of vertices in the primitive.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.triangleset.BoundTriangleSet.texcoord_indexset" title="collada.triangleset.BoundTriangleSet.texcoord_indexset"><tt class="xref py py-obj docutils literal"><span class="pre">texcoord_indexset</span></tt></a></td>
+<td>Read-only tuple of texture coordinate index arrays.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.triangleset.BoundTriangleSet.texcoordset" title="collada.triangleset.BoundTriangleSet.texcoordset"><tt class="xref py py-obj docutils literal"><span class="pre">texcoordset</span></tt></a></td>
+<td>Read-only tuple of texture coordinate arrays.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.triangleset.BoundTriangleSet.vertex" title="collada.triangleset.BoundTriangleSet.vertex"><tt class="xref py py-obj docutils literal"><span class="pre">vertex</span></tt></a></td>
+<td>Read-only numpy.array of size Nx3 where N is the number of vertex points in the</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.triangleset.BoundTriangleSet.vertex_index" title="collada.triangleset.BoundTriangleSet.vertex_index"><tt class="xref py py-obj docutils literal"><span class="pre">vertex_index</span></tt></a></td>
+<td>Read-only numpy.array of size Nx3 where N is the number of vertices in the primitive.</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="collada.triangleset.BoundTriangleSet.normal">
+<tt class="descname">normal</tt><a class="headerlink" href="#collada.triangleset.BoundTriangleSet.normal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-only numpy.array of size Nx3 where N is the number of normal values in the
+primitive&#8217;s normal source array. The values will be transformed according to the 
+bound transformation matrix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.triangleset.BoundTriangleSet.normal_index">
+<tt class="descname">normal_index</tt><a class="headerlink" href="#collada.triangleset.BoundTriangleSet.normal_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-only numpy.array of size Nx3 where N is the number of vertices in the primitive.
+To get the actual normal values, one can use this array to select into the normals
+array, e.g. <tt class="docutils literal"><span class="pre">normal[normal_index]</span></tt>. The values will be transformed according to the 
+bound transformation matrix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.triangleset.BoundTriangleSet.texcoord_indexset">
+<tt class="descname">texcoord_indexset</tt><a class="headerlink" href="#collada.triangleset.BoundTriangleSet.texcoord_indexset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-only tuple of texture coordinate index arrays. Each value is a numpy.array of size
+Nx2 where N is the number of vertices in the primitive. To get the actual texture
+coordinates, one can use the array to select into the texcoordset array, e.g.
+<tt class="docutils literal"><span class="pre">texcoordset[0][texcoord_indexset[0]]</span></tt> would select the first set of texture
+coordinates. The values will be transformed according to the bound transformation matrix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.triangleset.BoundTriangleSet.texcoordset">
+<tt class="descname">texcoordset</tt><a class="headerlink" href="#collada.triangleset.BoundTriangleSet.texcoordset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-only tuple of texture coordinate arrays. Each value is a numpy.array of size
+Nx2 where N is the number of texture coordinates in the primitive&#8217;s source array. The
+values will be transformed according to the bound transformation matrix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.triangleset.BoundTriangleSet.vertex">
+<tt class="descname">vertex</tt><a class="headerlink" href="#collada.triangleset.BoundTriangleSet.vertex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-only numpy.array of size Nx3 where N is the number of vertex points in the
+primitive&#8217;s vertex source array. The values will be transformed according to the 
+bound transformation matrix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.triangleset.BoundTriangleSet.vertex_index">
+<tt class="descname">vertex_index</tt><a class="headerlink" href="#collada.triangleset.BoundTriangleSet.vertex_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-only numpy.array of size Nx3 where N is the number of vertices in the primitive.
+To get the actual vertex points, one can use this array to select into the vertex
+array, e.g. <tt class="docutils literal"><span class="pre">vertex[vertex_index]</span></tt>. The values will be transformed according to the 
+bound transformation matrix.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.triangleset.BoundTriangleSet.triangles">
+<tt class="descname">triangles</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.triangleset.BoundTriangleSet.triangles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterate through all the triangles contained in the set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body">generator of <a class="reference internal" href="collada.triangleset.Triangle.html#collada.triangleset.Triangle" title="collada.triangleset.Triangle"><tt class="xref py py-class docutils literal"><span class="pre">collada.triangleset.Triangle</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.triangleset.BoundTriangleSet.shapes">
+<tt class="descname">shapes</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.triangleset.BoundTriangleSet.shapes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterate through all the triangles contained in the set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body">generator of <a class="reference internal" href="collada.triangleset.Triangle.html#collada.triangleset.Triangle" title="collada.triangleset.Triangle"><tt class="xref py py-class docutils literal"><span class="pre">collada.triangleset.Triangle</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.triangleset.BoundTriangleSet.generateNormals">
+<tt class="descname">generateNormals</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.triangleset.BoundTriangleSet.generateNormals" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <tt class="xref py py-attr docutils literal"><span class="pre">normals</span></tt> is <cite>None</cite> or you wish for normals to be
+recomputed, call this method to recompute them.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.triangleset.Triangle.html" title="collada.triangleset.Triangle"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.triangleset.html" title="collada.triangleset"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.camera.Camera &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.controller" href="collada.controller.html" />
+    <link rel="prev" title="collada.camera.BoundCamera" href="collada.camera.BoundCamera.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.controller.html" title="collada.controller"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.camera.BoundCamera.html" title="collada.camera.BoundCamera"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.camera.BoundCamera.html"
+                        title="previous chapter">collada.camera.BoundCamera</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.controller.html"
+                        title="next chapter">collada.controller</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.camera.Camera.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-camera-camera">
+<h1>collada.camera.Camera<a class="headerlink" href="#collada-camera-camera" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="collada.camera.Camera">
+<em class="property">class </em><tt class="descclassname">collada.camera.</tt><tt class="descname">Camera</tt><big>(</big><em>id</em>, <em>fov</em>, <em>near</em>, <em>far</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.camera.Camera" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="collada.DaeObject.html#collada.DaeObject" title="collada.DaeObject"><tt class="xref py py-class docutils literal"><span class="pre">collada.DaeObject</span></tt></a></p>
+<p>Camera data as defined in COLLADA tag &lt;camera&gt;.</p>
+<p class="graphviz">
+<img src="../../_images/inheritance-b2b089ec568a8284fe0cc67e67b4ab66adebd68c.png" alt="Inheritance diagram of collada.camera" usemap="#inheritance36891bae67" class="inheritance"/>
+<map id="inheritance36891bae67" name="inheritance36891bae67">
+<area shape="rect" id="node1" href="#collada.camera.Camera" title="Camera" alt="" coords="169,55,241,83"/>
+<area shape="rect" id="node2" href="collada.DaeObject.html#collada.DaeObject" title="DaeObject" alt="" coords="19,55,107,83"/>
+<area shape="rect" id="node4" href="collada.camera.BoundCamera.html#collada.camera.BoundCamera" title="BoundCamera" alt="" coords="5,5,120,33"/>
+</map>
+</p>
+<dl class="method">
+<dt id="collada.camera.Camera.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>id</em>, <em>fov</em>, <em>near</em>, <em>far</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.camera.Camera.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new camera.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> (<em>str</em>) &#8211; Id for the object</li>
+<li><strong>fov</strong> (<em>float</em>) &#8211; Y axis field of vision in degrees</li>
+<li><strong>near</strong> (<em>float</em>) &#8211; Near plane distance</li>
+<li><strong>far</strong> (<em>float</em>) &#8211; Far plane distance</li>
+<li><strong>xmlnode</strong> &#8211; If loaded from xml, the xml node</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.camera.Camera.__init__" title="collada.camera.Camera.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>(id,&nbsp;fov,&nbsp;near,&nbsp;far[,&nbsp;xmlnode])</td>
+<td>Create a new camera.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.camera.Camera.bind" title="collada.camera.Camera.bind"><tt class="xref py py-obj docutils literal"><span class="pre">bind</span></tt></a>(matrix)</td>
+<td>Create a bound camera of itself based on a transform matrix.</td>
+</tr>
+<tr><td><tt class="xref py py-obj docutils literal"><span class="pre">load</span></tt>(collada,&nbsp;localscope,&nbsp;node)</td>
+<td></td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.camera.Camera.save" title="collada.camera.Camera.save"><tt class="xref py py-obj docutils literal"><span class="pre">save</span></tt></a>()</td>
+<td>Saves the camera&#8217;s properties back to xmlnode</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="collada.camera.Camera.id">
+<tt class="descname">id</tt><a class="headerlink" href="#collada.camera.Camera.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Id in the camera library.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.camera.Camera.fov">
+<tt class="descname">fov</tt><a class="headerlink" href="#collada.camera.Camera.fov" title="Permalink to this definition">¶</a></dt>
+<dd><p>Field of vision in degrees.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.camera.Camera.near">
+<tt class="descname">near</tt><a class="headerlink" href="#collada.camera.Camera.near" title="Permalink to this definition">¶</a></dt>
+<dd><p>Near plane distance.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.camera.Camera.far">
+<tt class="descname">far</tt><a class="headerlink" href="#collada.camera.Camera.far" title="Permalink to this definition">¶</a></dt>
+<dd><p>Far plane distance.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.camera.Camera.xmlnode">
+<tt class="descname">xmlnode</tt><a class="headerlink" href="#collada.camera.Camera.xmlnode" title="Permalink to this definition">¶</a></dt>
+<dd><p>ElementTree representation of the data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.camera.Camera.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.camera.Camera.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the camera&#8217;s properties back to xmlnode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.camera.Camera.bind">
+<tt class="descname">bind</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#collada.camera.Camera.bind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a bound camera of itself based on a transform matrix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><strong>matrix</strong> (<em>numpy.array</em>) &#8211; A numpy transformation matrix of size 4x4</td>
+</tr>
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="collada.camera.BoundCamera.html#collada.camera.BoundCamera" title="collada.camera.BoundCamera"><tt class="xref py py-class docutils literal"><span class="pre">collada.camera.BoundCamera</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.controller.html" title="collada.controller"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.camera.BoundCamera.html" title="collada.camera.BoundCamera"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

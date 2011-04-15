@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Collada Object Structure &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="index.html" />
+    <link rel="next" title="Creating A Collada Object" href="creating.html" />
+    <link rel="prev" title="Loading A Collada Document" href="loading.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="creating.html" title="Creating A Collada Object"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="loading.html" title="Loading A Collada Document"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pycollada v0.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="loading.html"
+                        title="previous chapter">Loading A Collada Document</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="creating.html"
+                        title="next chapter">Creating A Collada Object</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/structure.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-object-structure">
+<span id="structure"></span><h1>Collada Object Structure<a class="headerlink" href="#collada-object-structure" title="Permalink to this headline">¶</a></h1>
+<p>After loading a collada document, all of the information about the
+file is stored within the Collada object. For example, consider the
+following code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">collada</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span> <span class="o">=</span> <span class="n">Collada</span><span class="p">(</span><span class="s">&#39;duck_triangles.dae&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span>
+<span class="go">&lt;Collada geometries=1&gt;</span>
+</pre></div>
+</div>
+<p>This sample file is located in <cite>collada/tests/data</cite> of the pycollada
+distribution. We can now explore the attributes of the <a class="reference internal" href="reference/generated/collada.Collada.html#collada.Collada" title="collada.Collada"><tt class="xref py py-class docutils literal"><span class="pre">Collada</span></tt></a>
+class.</p>
+<p>Let&#8217;s see what <a class="reference internal" href="reference/generated/collada.Collada.html#collada.Collada.geometries" title="collada.Collada.geometries"><tt class="xref py py-attr docutils literal"><span class="pre">Collada.geometries</span></tt></a> it has:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span><span class="o">.</span><span class="n">geometries</span>
+<span class="go">[&lt;Geometry id=LOD3spShape-lib, 1 primitives&gt;]</span>
+</pre></div>
+</div>
+<p>Each geometry has a number of <a class="reference internal" href="reference/generated/collada.source.Source.html#collada.source.Source" title="collada.source.Source"><tt class="xref py py-class docutils literal"><span class="pre">Source</span></tt></a> objects that contain raw
+source data like an array of floats. It then has a number of <a class="reference internal" href="reference/generated/collada.primitive.Primitive.html#collada.primitive.Primitive" title="collada.primitive.Primitive"><tt class="xref py py-class docutils literal"><span class="pre">Primitive</span></tt></a>
+objects contained. Let&#8217;s inspect them:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">geom</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">geometries</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">geom</span><span class="o">.</span><span class="n">primitives</span>
+<span class="go">[&lt;TriangleSet length=4212&gt;]</span>
+</pre></div>
+</div>
+<p>In this case, there is only a single primitive contained in the geometry and it&#8217;s
+a set of triangles. The <a class="reference internal" href="reference/generated/collada.triangleset.TriangleSet.html#collada.triangleset.TriangleSet" title="collada.triangleset.TriangleSet"><tt class="xref py py-class docutils literal"><span class="pre">TriangleSet</span></tt></a> object lets us get at the vertex,
+normal, and texture coordinate information. There are index properties that index
+into the source arrays, and the sources are also automatically mapped for you.
+You can iterate over the triangle set to yield individual <a class="reference internal" href="reference/generated/collada.triangleset.Triangle.html#collada.triangleset.Triangle" title="collada.triangleset.Triangle"><tt class="xref py py-class docutils literal"><span class="pre">Triangle</span></tt></a>
+objects:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">triset</span> <span class="o">=</span> <span class="n">geom</span><span class="o">.</span><span class="n">primitives</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">trilist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">triset</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">trilist</span><span class="p">)</span>
+<span class="go">4212</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">trilist</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&lt;Triangle ([-23.93639946  11.53530025  30.61249924], [-18.72640038  10.1079998   26.6814003 ], [-15.69919968  11.42780018  34.23210144], &quot;blinn3SG&quot;)&gt;</span>
+</pre></div>
+</div>
+<p>The triangle object has the vertex, normal, and texture coordinate data associated
+with the triangle, as well as the material it references. Iterating over the triangle
+set is convenient, but it can be slow for large meshes. Instead, you can access the
+numpy arrays in the set. For example, to get the vertex, normal, and texture coordinate
+for the first triangle in the set:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">triset</span><span class="o">.</span><span class="n">vertex</span><span class="p">[</span><span class="n">triset</span><span class="o">.</span><span class="n">vertex_index</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">array([[-23.93639946,  11.53530025,  30.61249924],</span>
+<span class="go">       [-18.72640038,  10.1079998 ,  26.6814003 ],</span>
+<span class="go">       [-15.69919968,  11.42780018,  34.23210144]], dtype=float32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">triset</span><span class="o">.</span><span class="n">normal</span><span class="p">[</span><span class="n">triset</span><span class="o">.</span><span class="n">normal_index</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">array([[-0.192109  , -0.934569  ,  0.299458  ],</span>
+<span class="go">       [-0.06315   , -0.99362302,  0.093407  ],</span>
+<span class="go">       [-0.11695   , -0.92131299,  0.37081599]], dtype=float32)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">triset</span><span class="o">.</span><span class="n">texcoordset</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">triset</span><span class="o">.</span><span class="n">texcoord_indexset</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">array([[ 0.866606  ,  0.39892399],</span>
+<span class="go">       [ 0.87138402,  0.39761901],</span>
+<span class="go">       [ 0.87415999,  0.398826  ]], dtype=float32)</span>
+</pre></div>
+</div>
+<p>These are numpy arrays which allows for fast retrieval and computations.</p>
+<p>The collada object also has arrays for accessing <a class="reference internal" href="reference/generated/collada.camera.Camera.html#collada.camera.Camera" title="collada.camera.Camera"><tt class="xref py py-class docutils literal"><span class="pre">Camera</span></tt></a>, <a class="reference internal" href="reference/generated/collada.light.Light.html#collada.light.Light" title="collada.light.Light"><tt class="xref py py-class docutils literal"><span class="pre">Light</span></tt></a>,
+<a class="reference internal" href="reference/generated/collada.material.Effect.html#collada.material.Effect" title="collada.material.Effect"><tt class="xref py py-class docutils literal"><span class="pre">Effect</span></tt></a>, <a class="reference internal" href="reference/generated/collada.material.Material.html#collada.material.Material" title="collada.material.Material"><tt class="xref py py-class docutils literal"><span class="pre">Material</span></tt></a>, and <a class="reference internal" href="reference/generated/collada.scene.Scene.html#collada.scene.Scene" title="collada.scene.Scene"><tt class="xref py py-class docutils literal"><span class="pre">Scene</span></tt></a> objects:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span><span class="o">.</span><span class="n">cameras</span>
+<span class="go">[&lt;Camera id=cameraShape1&gt;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span><span class="o">.</span><span class="n">lights</span>
+<span class="go">[&lt;DirectionalLight id=directionalLightShape1-lib&gt;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span><span class="o">.</span><span class="n">effects</span>
+<span class="go">[&lt;Effect id=blinn3-fx type=blinn&gt;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span><span class="o">.</span><span class="n">materials</span>
+<span class="go">[&lt;Material id=blinn3 effect=blinn3-fx&gt;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span><span class="o">.</span><span class="n">scenes</span>
+<span class="go">[&lt;Scene id=VisualSceneNode nodes=3&gt;]</span>
+</pre></div>
+</div>
+<p>A collada scene is a graph that contains nodes. Each node can have transformations
+and a list of child nodes. A child node can be another node or an instance of a geometry,
+light, camera, etc. The default scene is contained in the <a class="reference internal" href="reference/generated/collada.Collada.html#collada.Collada.scene" title="collada.Collada.scene"><tt class="xref py py-attr docutils literal"><span class="pre">Collada.scene</span></tt></a> attribute.
+Let&#8217;s take a look:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span><span class="o">.</span><span class="n">scene</span>
+<span class="go">&lt;Scene id=VisualSceneNode nodes=3&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">nodes</span>
+<span class="go">[&lt;Node transforms=3, children=1&gt;, &lt;Node transforms=4, children=1&gt;, &lt;Node transforms=4, children=1&gt;]</span>
+</pre></div>
+</div>
+<p>We could write code to iterate through the scene, applying transformations on bound objects,
+but the Scene object already does this for you via its <a class="reference internal" href="reference/generated/collada.scene.Scene.html#collada.scene.Scene.objects" title="collada.scene.Scene.objects"><tt class="xref py py-meth docutils literal"><span class="pre">Scene.objects()</span></tt></a> method. For
+example, to find all of the instantiated geometries in a scene and have them bound to a
+material and transformation:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">boundgeoms</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">mesh</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">objects</span><span class="p">(</span><span class="s">&#39;geometry&#39;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boundgeoms</span>
+<span class="go">[&lt;BoundGeometry id=LOD3spShape-lib, 1 primitives&gt;]</span>
+</pre></div>
+</div>
+<p>Notice that we get a <a class="reference internal" href="reference/generated/collada.geometry.BoundGeometry.html#collada.geometry.BoundGeometry" title="collada.geometry.BoundGeometry"><tt class="xref py py-class docutils literal"><span class="pre">BoundGeometry</span></tt></a> here. We can also pass in <cite>light</cite>, <cite>camera</cite>, or
+<cite>controller</cite> to get back a <a class="reference internal" href="reference/generated/collada.light.BoundLight.html#collada.light.BoundLight" title="collada.light.BoundLight"><tt class="xref py py-class docutils literal"><span class="pre">BoundLight</span></tt></a>, <a class="reference internal" href="reference/generated/collada.camera.BoundCamera.html#collada.camera.BoundCamera" title="collada.camera.BoundCamera"><tt class="xref py py-class docutils literal"><span class="pre">BoundCamera</span></tt></a>, or <a class="reference internal" href="reference/generated/collada.controller.BoundController.html#collada.controller.BoundController" title="collada.controller.BoundController"><tt class="xref py py-class docutils literal"><span class="pre">BoundController</span></tt></a>,
+respectively. The bound geometry is very similar to the geometry we looked through above. We can use
+the iterative method:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">boundprims</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">boundgeoms</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">primitives</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boundprims</span>
+<span class="go">[&lt;BoundTriangleSet length=4212&gt;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boundtrilist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">boundprims</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boundtrilist</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&lt;Triangle ([-23.93639946 -30.61249924  11.53530025], [-18.72640038 -26.6814003   10.1079998 ], [-15.69919968 -34.23210144  11.42780018], &quot;&lt;Material id=blinn3 effect=blinn3-fx&gt;&quot;)&gt;</span>
+</pre></div>
+</div>
+<p>or by accessing the numpy arrays directly:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">boundprims</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">vertex</span><span class="p">[</span><span class="n">boundprims</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">vertex_index</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">array([[-23.93639946, -30.61249924,  11.53530025],</span>
+<span class="go">       [-18.72640038, -26.6814003 ,  10.1079998 ],</span>
+<span class="go">       [-15.69919968, -34.23210144,  11.42780018]], dtype=float32)</span>
+</pre></div>
+</div>
+<p>In this case, the triangle is identical to above. This is because the collada duck example only has
+identity transformations. We can inspect these in the scene:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">transforms</span>
+<span class="go">[&lt;RotateTransform (0.0, 0.0, 1.0) angle=0.0&gt;, &lt;RotateTransform (0.0, 1.0, 0.0) angle=0.0&gt;, &lt;RotateTransform (1.0, 0.0, 0.0) angle=0.0&gt;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">children</span>
+<span class="go">[&lt;GeometryNode geometry=LOD3spShape-lib&gt;]</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="creating.html" title="Creating A Collada Object"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="loading.html" title="Loading A Collada Document"
+             >previous</a> |</li>
+        <li><a href="index.html">pycollada v0.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

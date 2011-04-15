@@ -1,0 +1,193 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.scene.LookAtTransform &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.scene.MaterialNode" href="collada.scene.MaterialNode.html" />
+    <link rel="prev" title="collada.scene.LightNode" href="collada.scene.LightNode.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.scene.MaterialNode.html" title="collada.scene.MaterialNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.scene.LightNode.html" title="collada.scene.LightNode"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.scene.LightNode.html"
+                        title="previous chapter">collada.scene.LightNode</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.scene.MaterialNode.html"
+                        title="next chapter">collada.scene.MaterialNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.scene.LookAtTransform.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-scene-lookattransform">
+<h1>collada.scene.LookAtTransform<a class="headerlink" href="#collada-scene-lookattransform" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="collada.scene.LookAtTransform">
+<em class="property">class </em><tt class="descclassname">collada.scene.</tt><tt class="descname">LookAtTransform</tt><big>(</big><em>eye</em>, <em>interest</em>, <em>upvector</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.scene.LookAtTransform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="collada.scene.Transform.html#collada.scene.Transform" title="collada.scene.Transform"><tt class="xref py py-class docutils literal"><span class="pre">collada.scene.Transform</span></tt></a></p>
+<p>Contains a transformation for aiming a camera as defined in the collada &lt;lookat&gt; tag.</p>
+<dl class="method">
+<dt id="collada.scene.LookAtTransform.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>eye</em>, <em>interest</em>, <em>upvector</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.scene.LookAtTransform.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a lookat transformation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>eye</strong> (<em>numpy.array</em>) &#8211; An unshaped numpy array of floats of length 3 containing the position of the eye</li>
+<li><strong>interest</strong> (<em>numpy.array</em>) &#8211; An unshaped numpy array of floats of length 3 containing the point of interest</li>
+<li><strong>upvector</strong> (<em>numpy.array</em>) &#8211; An unshaped numpy array of floats of length 3 containing the up-axis direction</li>
+<li><strong>xmlnode</strong> &#8211; When loaded, the xmlnode it comes from</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.scene.LookAtTransform.__init__" title="collada.scene.LookAtTransform.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>(eye,&nbsp;interest,&nbsp;upvector[,&nbsp;xmlnode])</td>
+<td>Creates a lookat transformation</td>
+</tr>
+<tr><td><tt class="xref py py-obj docutils literal"><span class="pre">load</span></tt>(collada,&nbsp;node)</td>
+<td></td>
+</tr>
+<tr><td><tt class="xref py py-obj docutils literal"><span class="pre">save</span></tt>()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="collada.scene.LookAtTransform.eye">
+<tt class="descname">eye</tt><a class="headerlink" href="#collada.scene.LookAtTransform.eye" title="Permalink to this definition">¶</a></dt>
+<dd><p>A numpy array of length 3 containing the position of the eye</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.scene.LookAtTransform.interest">
+<tt class="descname">interest</tt><a class="headerlink" href="#collada.scene.LookAtTransform.interest" title="Permalink to this definition">¶</a></dt>
+<dd><p>A numpy array of length 3 containing the point of interest</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.scene.LookAtTransform.upvector">
+<tt class="descname">upvector</tt><a class="headerlink" href="#collada.scene.LookAtTransform.upvector" title="Permalink to this definition">¶</a></dt>
+<dd><p>A numpy array of length 3 containing the up-axis direction</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.scene.LookAtTransform.matrix">
+<tt class="descname">matrix</tt><a class="headerlink" href="#collada.scene.LookAtTransform.matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>The resulting transformation matrix. This will be a numpy.array of size 4x4.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.scene.LookAtTransform.xmlnode">
+<tt class="descname">xmlnode</tt><a class="headerlink" href="#collada.scene.LookAtTransform.xmlnode" title="Permalink to this definition">¶</a></dt>
+<dd><p>ElementTree representation of the transform.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.scene.MaterialNode.html" title="collada.scene.MaterialNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.scene.LightNode.html" title="collada.scene.LightNode"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

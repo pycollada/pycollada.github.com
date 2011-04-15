@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.light.PointLight &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.light.SpotLight" href="collada.light.SpotLight.html" />
+    <link rel="prev" title="collada.light.Light" href="collada.light.Light.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.light.SpotLight.html" title="collada.light.SpotLight"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.light.Light.html" title="collada.light.Light"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.light.Light.html"
+                        title="previous chapter">collada.light.Light</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.light.SpotLight.html"
+                        title="next chapter">collada.light.SpotLight</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.light.PointLight.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-light-pointlight">
+<h1>collada.light.PointLight<a class="headerlink" href="#collada-light-pointlight" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="collada.light.PointLight">
+<em class="property">class </em><tt class="descclassname">collada.light.</tt><tt class="descname">PointLight</tt><big>(</big><em>id</em>, <em>color</em>, <em>constant_att=None</em>, <em>linear_att=None</em>, <em>quad_att=None</em>, <em>zfar=None</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.light.PointLight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="collada.light.Light.html#collada.light.Light" title="collada.light.Light"><tt class="xref py py-class docutils literal"><span class="pre">collada.light.Light</span></tt></a></p>
+<p>Point light as defined in COLLADA tag &lt;point&gt;.</p>
+<p class="graphviz">
+<img src="../../_images/inheritance-3cdb4fd53ec0c63b211dae6c9e937356bd897836.png" alt="Inheritance diagram of collada.light" usemap="#inheritance62d63eb89a" class="inheritance"/>
+<map id="inheritance62d63eb89a" name="inheritance62d63eb89a">
+<area shape="rect" id="node1" href="collada.light.BoundPointLight.html#collada.light.BoundPointLight" title="BoundPointLight" alt="" coords="168,131,293,159"/>
+<area shape="rect" id="node2" href="collada.light.BoundLight.html#collada.light.BoundLight" title="BoundLight" alt="" coords="7,207,100,235"/>
+<area shape="rect" id="node5" href="collada.light.BoundDirectionalLight.html#collada.light.BoundDirectionalLight" title="BoundDirectionalLight" alt="" coords="149,182,312,210"/>
+<area shape="rect" id="node15" href="collada.light.BoundAmbientLight.html#collada.light.BoundAmbientLight" title="BoundAmbientLight" alt="" coords="157,233,304,261"/>
+<area shape="rect" id="node19" href="collada.light.BoundSpotLight.html#collada.light.BoundSpotLight" title="BoundSpotLight" alt="" coords="169,283,292,311"/>
+<area shape="rect" id="node4" href="collada.DaeObject.html#collada.DaeObject" title="DaeObject" alt="" coords="9,81,97,109"/>
+<area shape="rect" id="node8" href="collada.light.Light.html#collada.light.Light" title="Light" alt="" coords="195,81,267,109"/>
+<area shape="rect" id="node7" href="collada.light.AmbientLight.html#collada.light.AmbientLight" title="AmbientLight" alt="" coords="368,5,475,33"/>
+<area shape="rect" id="node10" href="#collada.light.PointLight" title="PointLight" alt="" coords="379,55,464,83"/>
+<area shape="rect" id="node13" href="collada.light.DirectionalLight.html#collada.light.DirectionalLight" title="DirectionalLight" alt="" coords="361,106,481,134"/>
+<area shape="rect" id="node17" href="collada.light.SpotLight.html#collada.light.SpotLight" title="SpotLight" alt="" coords="380,157,463,185"/>
+</map>
+</p>
+<dl class="method">
+<dt id="collada.light.PointLight.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>id</em>, <em>color</em>, <em>constant_att=None</em>, <em>linear_att=None</em>, <em>quad_att=None</em>, <em>zfar=None</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.light.PointLight.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new sun light.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> (<em>str</em>) &#8211; A unique string identifier for the light</li>
+<li><strong>color</strong> (<em>tuple</em>) &#8211; Either a tuple of size 3 containing the RGB color value
+of the light or a tuple of size 4 containing the RGBA
+color value of the light</li>
+<li><strong>constant_att</strong> (<em>float</em>) &#8211; Constant attenuation factor</li>
+<li><strong>linear_att</strong> (<em>float</em>) &#8211; Linear attenuation factor</li>
+<li><strong>quad_att</strong> (<em>float</em>) &#8211; Quadratic attenuation factor</li>
+<li><strong>zfar</strong> (<em>float</em>) &#8211; Distance to the far clipping plane</li>
+<li><strong>xmlnode</strong> &#8211; If loaded from xml, the xml node</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.light.PointLight.__init__" title="collada.light.PointLight.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>(id,&nbsp;color[,&nbsp;constant_att,&nbsp;...])</td>
+<td>Create a new sun light.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.light.PointLight.bind" title="collada.light.PointLight.bind"><tt class="xref py py-obj docutils literal"><span class="pre">bind</span></tt></a>(matrix)</td>
+<td>Binds this light to a transform matrix.</td>
+</tr>
+<tr><td><tt class="xref py py-obj docutils literal"><span class="pre">load</span></tt>(collada,&nbsp;localscope,&nbsp;node)</td>
+<td></td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.light.PointLight.save" title="collada.light.PointLight.save"><tt class="xref py py-obj docutils literal"><span class="pre">save</span></tt></a>()</td>
+<td>Saves the light&#8217;s properties back to <a class="reference internal" href="#collada.light.PointLight.xmlnode" title="collada.light.PointLight.xmlnode"><tt class="xref py py-attr docutils literal"><span class="pre">xmlnode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="collada.light.PointLight.id">
+<tt class="descname">id</tt><a class="headerlink" href="#collada.light.PointLight.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The unique string identifier for the light</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.light.PointLight.color">
+<tt class="descname">color</tt><a class="headerlink" href="#collada.light.PointLight.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either a tuple of size 3 containing the RGB color value
+of the light or a tuple of size 4 containing the RGBA
+color value of the light</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.light.PointLight.constant_att">
+<tt class="descname">constant_att</tt><a class="headerlink" href="#collada.light.PointLight.constant_att" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constant attenuation factor.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.light.PointLight.linear_att">
+<tt class="descname">linear_att</tt><a class="headerlink" href="#collada.light.PointLight.linear_att" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linear attenuation factor.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.light.PointLight.quad_att">
+<tt class="descname">quad_att</tt><a class="headerlink" href="#collada.light.PointLight.quad_att" title="Permalink to this definition">¶</a></dt>
+<dd><p>Quadratic attenuation factor.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.light.PointLight.zfar">
+<tt class="descname">zfar</tt><a class="headerlink" href="#collada.light.PointLight.zfar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Distance to the far clipping plane</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.light.PointLight.xmlnode">
+<tt class="descname">xmlnode</tt><a class="headerlink" href="#collada.light.PointLight.xmlnode" title="Permalink to this definition">¶</a></dt>
+<dd><p>ElementTree representation of the light.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.light.PointLight.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.light.PointLight.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the light&#8217;s properties back to <a class="reference internal" href="#collada.light.PointLight.xmlnode" title="collada.light.PointLight.xmlnode"><tt class="xref py py-attr docutils literal"><span class="pre">xmlnode</span></tt></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.light.PointLight.bind">
+<tt class="descname">bind</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#collada.light.PointLight.bind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Binds this light to a transform matrix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><strong>matrix</strong> (<em>numpy.array</em>) &#8211; A 4x4 numpy float matrix</td>
+</tr>
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="collada.light.BoundPointLight.html#collada.light.BoundPointLight" title="collada.light.BoundPointLight"><tt class="xref py py-class docutils literal"><span class="pre">collada.light.BoundPointLight</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.light.SpotLight.html" title="collada.light.SpotLight"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.light.Light.html" title="collada.light.Light"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

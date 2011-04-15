@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.polylist.Polygon &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.polylist.Polylist" href="collada.polylist.Polylist.html" />
+    <link rel="prev" title="collada.polylist.BoundPolylist" href="collada.polylist.BoundPolylist.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.polylist.Polylist.html" title="collada.polylist.Polylist"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.polylist.BoundPolylist.html" title="collada.polylist.BoundPolylist"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.polylist.BoundPolylist.html"
+                        title="previous chapter">collada.polylist.BoundPolylist</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.polylist.Polylist.html"
+                        title="next chapter">collada.polylist.Polylist</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.polylist.Polygon.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-polylist-polygon">
+<h1>collada.polylist.Polygon<a class="headerlink" href="#collada-polylist-polygon" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="collada.polylist.Polygon">
+<em class="property">class </em><tt class="descclassname">collada.polylist.</tt><tt class="descname">Polygon</tt><big>(</big><em>indices</em>, <em>vertices</em>, <em>normals</em>, <em>texcoords</em>, <em>material</em><big>)</big><a class="headerlink" href="#collada.polylist.Polygon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
+<p>Single polygon representation. Represents a polygon of N points.</p>
+<dl class="method">
+<dt id="collada.polylist.Polygon.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>indices</em>, <em>vertices</em>, <em>normals</em>, <em>texcoords</em>, <em>material</em><big>)</big><a class="headerlink" href="#collada.polylist.Polygon.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Polygon should not be created manually.</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.polylist.Polygon.__init__" title="collada.polylist.Polygon.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>(indices,&nbsp;vertices,&nbsp;normals,&nbsp;...)</td>
+<td>A Polygon should not be created manually.</td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.polylist.Polygon.triangles" title="collada.polylist.Polygon.triangles"><tt class="xref py py-obj docutils literal"><span class="pre">triangles</span></tt></a>()</td>
+<td>This triangulates the polygon using a simple fanning method.</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="collada.polylist.Polygon.vertices">
+<tt class="descname">vertices</tt><a class="headerlink" href="#collada.polylist.Polygon.vertices" title="Permalink to this definition">¶</a></dt>
+<dd><p>A (N, 3) float array containing the points in the polygon.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.polylist.Polygon.normals">
+<tt class="descname">normals</tt><a class="headerlink" href="#collada.polylist.Polygon.normals" title="Permalink to this definition">¶</a></dt>
+<dd><p>A (N, 3) float array with the normals for points in the polygon. Can be None.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.polylist.Polygon.texcoords">
+<tt class="descname">texcoords</tt><a class="headerlink" href="#collada.polylist.Polygon.texcoords" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple where entries are numpy float arrays of size (N, 2) containing
+the texture coordinates for the points in the polygon for each texture
+coordinate set. Can be length 0 if there are no texture coordinates.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.polylist.Polygon.material">
+<tt class="descname">material</tt><a class="headerlink" href="#collada.polylist.Polygon.material" title="Permalink to this definition">¶</a></dt>
+<dd><p>If coming from an unbound <a class="reference internal" href="collada.polylist.Polylist.html#collada.polylist.Polylist" title="collada.polylist.Polylist"><tt class="xref py py-class docutils literal"><span class="pre">collada.polylist.Polylist</span></tt></a>, contains a
+string with the material symbol. If coming from a bound
+<a class="reference internal" href="collada.polylist.BoundPolylist.html#collada.polylist.BoundPolylist" title="collada.polylist.BoundPolylist"><tt class="xref py py-class docutils literal"><span class="pre">collada.polylist.BoundPolylist</span></tt></a>, contains the actual
+<a class="reference internal" href="collada.material.Effect.html#collada.material.Effect" title="collada.material.Effect"><tt class="xref py py-class docutils literal"><span class="pre">collada.material.Effect</span></tt></a> the line is bound to.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.polylist.Polygon.triangles">
+<tt class="descname">triangles</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.polylist.Polygon.triangles" title="Permalink to this definition">¶</a></dt>
+<dd><p>This triangulates the polygon using a simple fanning method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body">generator of <a class="reference internal" href="#collada.polylist.Polygon" title="collada.polylist.Polygon"><tt class="xref py py-class docutils literal"><span class="pre">collada.polylist.Polygon</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.polylist.Polylist.html" title="collada.polylist.Polylist"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.polylist.BoundPolylist.html" title="collada.polylist.BoundPolylist"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

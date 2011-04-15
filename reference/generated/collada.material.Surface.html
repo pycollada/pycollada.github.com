@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.material.Surface &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.polygons" href="collada.polygons.html" />
+    <link rel="prev" title="collada.material.Sampler2D" href="collada.material.Sampler2D.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.polygons.html" title="collada.polygons"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.material.Sampler2D.html" title="collada.material.Sampler2D"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.material.Sampler2D.html"
+                        title="previous chapter">collada.material.Sampler2D</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.polygons.html"
+                        title="next chapter">collada.polygons</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.material.Surface.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-material-surface">
+<h1>collada.material.Surface<a class="headerlink" href="#collada-material-surface" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="collada.material.Surface">
+<em class="property">class </em><tt class="descclassname">collada.material.</tt><tt class="descname">Surface</tt><big>(</big><em>id</em>, <em>img</em>, <em>format=None</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.material.Surface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="collada.DaeObject.html#collada.DaeObject" title="collada.DaeObject"><tt class="xref py py-class docutils literal"><span class="pre">collada.DaeObject</span></tt></a></p>
+<p>Class containing data coming from a &lt;surface&gt; tag.</p>
+<p>Collada materials use this to access to the &lt;image&gt; tag.
+The only extra information we store right now is the 
+image format. In theory, this enables many more features
+according to the collada spec, but no one seems to actually
+use them in the wild, so for now, it&#8217;s unimplemented.</p>
+<dl class="method">
+<dt id="collada.material.Surface.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>id</em>, <em>img</em>, <em>format=None</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.material.Surface.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a surface.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> (<em>str</em>) &#8211; A string identifier for the surface within the local scope of the material</li>
+<li><strong>img</strong> (<a class="reference internal" href="collada.material.CImage.html#collada.material.CImage" title="collada.material.CImage"><em>collada.material.CImage</em></a>) &#8211; The image object</li>
+<li><strong>format</strong> (<em>str</em>) &#8211; The format of the image</li>
+<li><strong>xmlnode</strong> &#8211; If loaded from xml, the xml node</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.material.Surface.__init__" title="collada.material.Surface.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>(id,&nbsp;img[,&nbsp;format,&nbsp;xmlnode])</td>
+<td>Creates a surface.</td>
+</tr>
+<tr><td><tt class="xref py py-obj docutils literal"><span class="pre">load</span></tt>(collada,&nbsp;localscope,&nbsp;node)</td>
+<td></td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.material.Surface.save" title="collada.material.Surface.save"><tt class="xref py py-obj docutils literal"><span class="pre">save</span></tt></a>()</td>
+<td>Saves the surface data back to <a class="reference internal" href="#collada.material.Surface.xmlnode" title="collada.material.Surface.xmlnode"><tt class="xref py py-attr docutils literal"><span class="pre">xmlnode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="collada.material.Surface.id">
+<tt class="descname">id</tt><a class="headerlink" href="#collada.material.Surface.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The string identifier for the surface within the local scope of the material</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.material.Surface.image">
+<tt class="descname">image</tt><a class="headerlink" href="#collada.material.Surface.image" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="collada.material.CImage.html#collada.material.CImage" title="collada.material.CImage"><tt class="xref py py-class docutils literal"><span class="pre">collada.material.CImage</span></tt></a> object from the image library.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.material.Surface.format">
+<tt class="descname">format</tt><a class="headerlink" href="#collada.material.Surface.format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.material.Surface.xmlnode">
+<tt class="descname">xmlnode</tt><a class="headerlink" href="#collada.material.Surface.xmlnode" title="Permalink to this definition">¶</a></dt>
+<dd><p>ElementTree representation of the surface.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.material.Surface.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.material.Surface.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the surface data back to <a class="reference internal" href="#collada.material.Surface.xmlnode" title="collada.material.Surface.xmlnode"><tt class="xref py py-attr docutils literal"><span class="pre">xmlnode</span></tt></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.polygons.html" title="collada.polygons"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.material.Sampler2D.html" title="collada.material.Sampler2D"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

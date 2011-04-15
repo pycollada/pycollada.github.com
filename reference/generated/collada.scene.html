@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.scene &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.scene.CameraNode" href="collada.scene.CameraNode.html" />
+    <link rel="prev" title="collada.primitive.Primitive" href="collada.primitive.Primitive.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.scene.CameraNode.html" title="collada.scene.CameraNode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.primitive.Primitive.html" title="collada.primitive.Primitive"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.primitive.Primitive.html"
+                        title="previous chapter">collada.primitive.Primitive</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.scene.CameraNode.html"
+                        title="next chapter">collada.scene.CameraNode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.scene.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-collada.scene">
+<span id="collada-scene"></span><h1>collada.scene<a class="headerlink" href="#module-collada.scene" title="Permalink to this headline">¶</a></h1>
+<p>This module contains several classes related to the scene graph.</p>
+<dl class="docutils">
+<dt>Supported scene nodes are:</dt>
+<dd><ul class="first last simple">
+<li>&lt;node&gt; which is loaded as a Node</li>
+<li>&lt;instance_camera&gt; which is loaded as a CameraNode</li>
+<li>&lt;instance_light&gt; which is loaded as a LightNode</li>
+<li>&lt;instance_material&gt; which is loaded as a MaterialNode</li>
+<li>&lt;instance_geometry&gt; which is loaded as a GeometryNode</li>
+<li>&lt;instance_controller&gt; which is loaded as a ControllerNode</li>
+<li>&lt;scene&gt; which is loaded as a Scene</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Members</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="collada.scene.CameraNode.html#collada.scene.CameraNode" title="collada.scene.CameraNode"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.CameraNode</span></tt></a></td>
+<td>Represents a camera being instantiated in a scene, as defined in the collada &lt;instance_camera&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.ControllerNode.html#collada.scene.ControllerNode" title="collada.scene.ControllerNode"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.ControllerNode</span></tt></a></td>
+<td>Represents a controller instance in a scene, as defined in the collada &lt;instance_controller&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.ExtraNode.html#collada.scene.ExtraNode" title="collada.scene.ExtraNode"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.ExtraNode</span></tt></a></td>
+<td>Represents extra information in a scene, as defined in a collada &lt;extra&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.GeometryNode.html#collada.scene.GeometryNode" title="collada.scene.GeometryNode"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.GeometryNode</span></tt></a></td>
+<td>Represents a geometry instance in a scene, as defined in the collada &lt;instance_geometry&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.LightNode.html#collada.scene.LightNode" title="collada.scene.LightNode"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.LightNode</span></tt></a></td>
+<td>Represents a light being instantiated in a scene, as defined in the collada &lt;instance_light&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.LookAtTransform.html#collada.scene.LookAtTransform" title="collada.scene.LookAtTransform"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.LookAtTransform</span></tt></a></td>
+<td>Contains a transformation for aiming a camera as defined in the collada &lt;lookat&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.MaterialNode.html#collada.scene.MaterialNode" title="collada.scene.MaterialNode"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.MaterialNode</span></tt></a></td>
+<td>Represents a material being instantiated in a scene, as defined in the collada &lt;instance_material&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.MatrixTransform.html#collada.scene.MatrixTransform" title="collada.scene.MatrixTransform"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.MatrixTransform</span></tt></a></td>
+<td>Contains a matrix transformation as defined in the collada &lt;matrix&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.Node.html#collada.scene.Node" title="collada.scene.Node"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.Node</span></tt></a></td>
+<td>Represents a node object, which is a point on the scene graph, as defined in the collada &lt;node&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.RotateTransform.html#collada.scene.RotateTransform" title="collada.scene.RotateTransform"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.RotateTransform</span></tt></a></td>
+<td>Contains a rotation transformation as defined in the collada &lt;rotate&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.ScaleTransform.html#collada.scene.ScaleTransform" title="collada.scene.ScaleTransform"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.ScaleTransform</span></tt></a></td>
+<td>Contains a scale transformation as defined in the collada &lt;scale&gt; tag.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.Scene.html#collada.scene.Scene" title="collada.scene.Scene"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.Scene</span></tt></a></td>
+<td>The root object for a scene, as defined in a collada &lt;scene&gt; tag</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.SceneNode.html#collada.scene.SceneNode" title="collada.scene.SceneNode"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.SceneNode</span></tt></a></td>
+<td>Abstract base class for all nodes within a scene.</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.Transform.html#collada.scene.Transform" title="collada.scene.Transform"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.Transform</span></tt></a></td>
+<td>Base class for all transformation types</td>
+</tr>
+<tr><td><a class="reference internal" href="collada.scene.TranslateTransform.html#collada.scene.TranslateTransform" title="collada.scene.TranslateTransform"><tt class="xref py py-obj docutils literal"><span class="pre">collada.scene.TranslateTransform</span></tt></a></td>
+<td>Contains a translation transformation as defined in the collada &lt;translate&gt; tag.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.scene.CameraNode.html" title="collada.scene.CameraNode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.primitive.Primitive.html" title="collada.primitive.Primitive"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

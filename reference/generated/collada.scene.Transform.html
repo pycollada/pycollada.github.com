@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.scene.Transform &mdash; pycollada v0.2 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.scene.TranslateTransform" href="collada.scene.TranslateTransform.html" />
+    <link rel="prev" title="collada.scene.SceneNode" href="collada.scene.SceneNode.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.scene.TranslateTransform.html" title="collada.scene.TranslateTransform"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.scene.SceneNode.html" title="collada.scene.SceneNode"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.scene.SceneNode.html"
+                        title="previous chapter">collada.scene.SceneNode</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.scene.TranslateTransform.html"
+                        title="next chapter">collada.scene.TranslateTransform</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.scene.Transform.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-scene-transform">
+<h1>collada.scene.Transform<a class="headerlink" href="#collada-scene-transform" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="collada.scene.Transform">
+<em class="property">class </em><tt class="descclassname">collada.scene.</tt><tt class="descname">Transform</tt><a class="headerlink" href="#collada.scene.Transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="collada.DaeObject.html#collada.DaeObject" title="collada.DaeObject"><tt class="xref py py-class docutils literal"><span class="pre">collada.DaeObject</span></tt></a></p>
+<p>Base class for all transformation types</p>
+<dl class="method">
+<dt id="collada.scene.Transform.__init__">
+<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.scene.Transform.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__init__(...) initializes x; see x.__class__.__doc__ for signature</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.scene.Transform.load" title="collada.scene.Transform.load"><tt class="xref py py-obj docutils literal"><span class="pre">load</span></tt></a>(collada,&nbsp;localscope,&nbsp;node)</td>
+<td>Load and return a class instance from an XML node.</td>
+</tr>
+<tr><td><tt class="xref py py-obj docutils literal"><span class="pre">save</span></tt>()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="staticmethod">
+<dt id="collada.scene.Transform.load">
+<em class="property">static </em><tt class="descname">load</tt><big>(</big><em>collada</em>, <em>localscope</em>, <em>node</em><big>)</big><a class="headerlink" href="#collada.scene.Transform.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load and return a class instance from an XML node.</p>
+<p>Inspect the data inside node, which must match
+this class tag and create an instance out of it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>collada</strong> (<a class="reference internal" href="collada.Collada.html#collada.Collada" title="collada.Collada"><em>collada.Collada</em></a>) &#8211; The collada file object where this object lives</li>
+<li><strong>localscope</strong> (<em>dict</em>) &#8211; If there is a local scope where we should look for local ids 
+(sid) this is the dictionary. Otherwise empty dict ({})</li>
+<li><strong>node</strong> &#8211; An Element from python&#8217;s ElementTree API</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.scene.TranslateTransform.html" title="collada.scene.TranslateTransform"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.scene.SceneNode.html" title="collada.scene.SceneNode"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
