@@ -7,13 +7,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>collada.material.Effect &mdash; pycollada v0.2 documentation</title>
+    <title>collada.material.Effect &mdash; pycollada v0.3 documentation</title>
     <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.2',
+        VERSION:     '0.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -22,7 +22,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="top" title="pycollada v0.3 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../index.html" />
     <link rel="next" title="collada.material.Map" href="collada.material.Map.html" />
     <link rel="prev" title="collada.material.CImage" href="collada.material.CImage.html" /> 
@@ -43,7 +43,7 @@
         <li class="right" >
           <a href="collada.material.CImage.html" title="collada.material.CImage"
              accesskey="P">previous</a> |</li>
-        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+        <li><a href="../../index.html">pycollada v0.3 documentation</a> &raquo;</li>
           <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
       </ul>
     </div>
@@ -85,12 +85,12 @@
 <h1>collada.material.Effect<a class="headerlink" href="#collada-material-effect" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="collada.material.Effect">
-<em class="property">class </em><tt class="descclassname">collada.material.</tt><tt class="descname">Effect</tt><big>(</big><em>id</em>, <em>params</em>, <em>shadingtype</em>, <em>emission=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>ambient=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>diffuse=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>specular=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>shininess=0.0</em>, <em>reflective=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>reflectivity=0.0</em>, <em>transparent=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>transparency=0.0</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.material.Effect" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">collada.material.</tt><tt class="descname">Effect</tt><big>(</big><em>id</em>, <em>params</em>, <em>shadingtype</em>, <em>bumpmap=None</em>, <em>double_sided=False</em>, <em>emission=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>ambient=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>diffuse=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>specular=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>shininess=0.0</em>, <em>reflective=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>reflectivity=0.0</em>, <em>transparent=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>transparency=0.0</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.material.Effect" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="collada.DaeObject.html#collada.DaeObject" title="collada.DaeObject"><tt class="xref py py-class docutils literal"><span class="pre">collada.DaeObject</span></tt></a></p>
 <p>Class containing data coming from an &lt;effect&gt; tag.</p>
 <dl class="method">
 <dt id="collada.material.Effect.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>id</em>, <em>params</em>, <em>shadingtype</em>, <em>emission=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>ambient=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>diffuse=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>specular=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>shininess=0.0</em>, <em>reflective=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>reflectivity=0.0</em>, <em>transparent=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>transparency=0.0</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.material.Effect.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>id</em>, <em>params</em>, <em>shadingtype</em>, <em>bumpmap=None</em>, <em>double_sided=False</em>, <em>emission=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>ambient=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>diffuse=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>specular=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>shininess=0.0</em>, <em>reflective=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>reflectivity=0.0</em>, <em>transparent=(0.0</em>, <em>0.0</em>, <em>0.0)</em>, <em>transparency=0.0</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.material.Effect.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an effect instance out of properties.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -102,6 +102,8 @@
 and <a class="reference internal" href="collada.material.Surface.html#collada.material.Surface" title="collada.material.Surface"><tt class="xref py py-class docutils literal"><span class="pre">collada.material.Surface</span></tt></a></li>
 <li><strong>shadingtype</strong> (<em>str</em>) &#8211; The type of shader to be used for this effect. Right now, we
 only supper the shaders listed in <a class="reference internal" href="#collada.material.Effect.shaders" title="collada.material.Effect.shaders"><tt class="xref py py-attr docutils literal"><span class="pre">shaders</span></tt></a></li>
+<li><strong>bumpmap</strong> (<a class="reference internal" href="collada.material.Map.html#collada.material.Map" title="collada.material.Map"><em>collada.material.Map</em></a>) &#8211; The bump map for this effect, or None if there isn&#8217;t one</li>
+<li><strong>double_sided</strong> (<em>bool</em>) &#8211; Whether or not the material should be rendered double sided</li>
 <li><strong>emission</strong> &#8211; Either an RGB-format tuple of three floats or an instance
 of <a class="reference internal" href="collada.material.Map.html#collada.material.Map" title="collada.material.Map"><tt class="xref py py-class docutils literal"><span class="pre">collada.material.Map</span></tt></a></li>
 <li><strong>ambient</strong> &#8211; Either an RGB-format tuple of three floats or an instance
@@ -172,6 +174,19 @@ and <a class="reference internal" href="collada.material.Surface.html#collada.ma
 <dt id="collada.material.Effect.shadingtype">
 <tt class="descname">shadingtype</tt><a class="headerlink" href="#collada.material.Effect.shadingtype" title="Permalink to this definition">¶</a></dt>
 <dd><p>String with the type of the shading.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.material.Effect.bumpmap">
+<tt class="descname">bumpmap</tt><a class="headerlink" href="#collada.material.Effect.bumpmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either the bump map of the effect of type <a class="reference internal" href="collada.material.Map.html#collada.material.Map" title="collada.material.Map"><tt class="xref py py-class docutils literal"><span class="pre">collada.material.Map</span></tt></a>
+or None if there is none.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.material.Effect.double_sided">
+<tt class="descname">double_sided</tt><a class="headerlink" href="#collada.material.Effect.double_sided" title="Permalink to this definition">¶</a></dt>
+<dd><p>A boolean indicating whether or not the material should be rendered double sided</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -246,6 +261,23 @@ of <a class="reference internal" href="collada.material.Map.html#collada.materia
 <dd><p>Saves the effect back to <a class="reference internal" href="#collada.material.Effect.xmlnode" title="collada.material.Effect.xmlnode"><tt class="xref py py-attr docutils literal"><span class="pre">xmlnode</span></tt></a></p>
 </dd></dl>
 
+<dl class="method">
+<dt id="collada.material.Effect.almostEqual">
+<tt class="descname">almostEqual</tt><big>(</big><em>other</em><big>)</big><a class="headerlink" href="#collada.material.Effect.almostEqual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if this effect is almost equal (within float precision)
+to the given effect.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#collada.material.Effect" title="collada.material.Effect"><em>collada.material.Effect</em></a>) &#8211; Effect to compare to</td>
+</tr>
+<tr class="field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -271,7 +303,7 @@ of <a class="reference internal" href="collada.material.Map.html#collada.materia
         <li class="right" >
           <a href="collada.material.CImage.html" title="collada.material.CImage"
              >previous</a> |</li>
-        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+        <li><a href="../../index.html">pycollada v0.3 documentation</a> &raquo;</li>
           <li><a href="../index.html" >API Reference</a> &raquo;</li> 
       </ul>
     </div>

@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Changelog &mdash; pycollada v0.3 documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.3 documentation" href="index.html" />
+    <link rel="next" title="API Summary" href="reference/summary.html" />
+    <link rel="prev" title="Creating A Collada Object" href="creating.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reference/summary.html" title="API Summary"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="creating.html" title="Creating A Collada Object"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pycollada v0.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Changelog</a><ul>
+<li><a class="reference internal" href="#id1">0.3 (2011-08-31)</a><ul>
+<li><a class="reference internal" href="#backwards-compatibility-notes">Backwards Compatibility Notes</a></li>
+<li><a class="reference internal" href="#new-features">New Features</a></li>
+<li><a class="reference internal" href="#bug-fixes">Bug Fixes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id2">0.2.2 (2011-05-03)</a></li>
+<li><a class="reference internal" href="#id3">0.2.1 (2011-04-15)</a></li>
+<li><a class="reference internal" href="#id4">0.2 (2011-04-15)</a></li>
+<li><a class="reference internal" href="#id5">0.1 (2009-02-08)</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="creating.html"
+                        title="previous chapter">Creating A Collada Object</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="reference/summary.html"
+                        title="next chapter">API Summary</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/changelog.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>0.3 (2011-08-31)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="backwards-compatibility-notes">
+<h3>Backwards Compatibility Notes<a class="headerlink" href="#backwards-compatibility-notes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>If using the old Camera object, this has been changed to an abstract class
+with types for PerspectiveCamera and OrthographicCamera</li>
+<li>If using the old Collada.assetInfo dictionary to read asset information, this
+has been changed to an object. See documentation for more information.</li>
+</ul>
+</div>
+<div class="section" id="new-features">
+<h3>New Features<a class="headerlink" href="#new-features" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Added support for bump maps inside the extra tag of an effect</li>
+<li>Added texbinormal and textangent to triangle sets</li>
+<li>Added a method to generate texture tangents and binormals</li>
+<li>Added detection for double_sided</li>
+<li>Added an optional parameter to specify what filename inside an archive to use when loading from zip</li>
+<li>Added support for loading multiple sets of library_* nodes</li>
+<li>Refactored asset information into a separate module. Fixed #12</li>
+<li>Refactored Camera into PerspectiveCamera and OrthographicCamera, inheriting from Camera</li>
+</ul>
+</div>
+<div class="section" id="bug-fixes">
+<h3>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Changed Collada IndexedLists attributes to be properties. Fixed Issue #14</li>
+<li>Updated scene to use a local scope when nodes are instantiated inside a scene</li>
+<li>Changed parsing to raise DaeMalformedError when an lxml parser exception is thrown</li>
+<li>Fixed bug when loading an &lt;image&gt; tag local to an &lt;effect&gt; not showing up in Collada.images</li>
+<li>Fixed bug when loading an empty &lt;polygons&gt;</li>
+<li>Fixed bug in if statement when loading morph controllers</li>
+<li>Fixed bug when triangulating a length-0 polylist</li>
+<li>Updated install instructions for OS X and Ubuntu problems</li>
+<li>Fixed bugs in IndexedList from Issue #13</li>
+<li>Fixed a bug where using the same map twice in an effect would cause incorrrect output</li>
+<li>Changed geometry export to delete any sources in the vertices tag that no longer exist</li>
+<li>Changed library output to not output emtpy library nodes so validator doesn&#8217;t complain</li>
+<li>Add same checks in scene loading that was done in library_nodes loading so that if nodes are not found yet while loading, it will keep trying</li>
+<li>Changed the way library_nodes is loaded so that if a referenced node from instance_node is not loaded yet, it will keep trying</li>
+<li>Fixed bug where a triangles xml node would try to set an attribute to None</li>
+<li>Fixed bug in handling joints that influence 0 vertices</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>0.2.2 (2011-05-03)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Changed the way instance_node is handled to actually maintain the mapping so it&#8217;s not lost when saving</li>
+<li>Added setdata function to CImage and made Effect compare only image path</li>
+<li>Fixed a bug when rewriting geometry sources</li>
+<li>Change primitive sources to point to the &lt;vertices&gt; tag when possible since other importers don&#8217;t like not having a &lt;vertices&gt; tag</li>
+<li>Export source data with only 7 decimal precision for better file size</li>
+<li>Prevent NaN from being the result of a normalize_v3 call</li>
+<li>Fixed bug where effect was not correctly reading all four color values</li>
+<li>Fixed a bug where a triangleset would not create its xml node when generated from a polylist</li>
+<li>Big speed increases for converting numpy data to strings</li>
+<li>Moved getInputs function to Primitive</li>
+<li>Added functions to triangleset to generate normals and get an input list</li>
+<li>Fixed bug in saving a scene node if there was no id</li>
+<li>Fixed some bugs/optimizations with saving</li>
+<li>Added function to test if an Effect is almost equal to another Effect</li>
+<li>Adding dynamic dependencies to setup.py</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>0.2.1 (2011-04-15)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Fixed bug with saving existing files that didn&#8217;t have some library_ tags.</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>0.2 (2011-04-15)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Many bugfixes</li>
+<li>polylist support</li>
+<li>polygons support without holes</li>
+<li>lines support</li>
+<li>blinn and constant material support</li>
+<li>More effect attributes</li>
+<li>Better support for auxiliary texture files</li>
+<li>Lights (directional, ambient, point, spot)</li>
+<li>lookat transform</li>
+<li>Experimental controller support (skin, morph)</li>
+<li>polygons/polylist can be triangulated</li>
+<li>Automatic computation of per-vertex normals</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>0.1 (2009-02-08)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Initial release</li>
+<li>Triangles geometry</li>
+<li>Reads vertices and normals</li>
+<li>Multiple texture coordinate channels</li>
+<li>Phong and Lambert Materials</li>
+<li>Texture support using PIL</li>
+<li>Scene suppport for geometry, material and camera instances</li>
+<li>Transforms (matrix, rotate, scale, translate)</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reference/summary.html" title="API Summary"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="creating.html" title="Creating A Collada Object"
+             >previous</a> |</li>
+        <li><a href="index.html">pycollada v0.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

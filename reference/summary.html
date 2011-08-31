@@ -7,13 +7,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>API Summary &mdash; pycollada v0.2 documentation</title>
+    <title>API Summary &mdash; pycollada v0.3 documentation</title>
     <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.2',
+        VERSION:     '0.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -22,9 +22,9 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pycollada v0.2 documentation" href="../index.html" />
+    <link rel="top" title="pycollada v0.3 documentation" href="../index.html" />
     <link rel="next" title="Main" href="main.html" />
-    <link rel="prev" title="Creating A Collada Object" href="../creating.html" /> 
+    <link rel="prev" title="Changelog" href="../changelog.html" /> 
   </head>
   <body>
     <div class="related">
@@ -40,16 +40,16 @@
           <a href="main.html" title="Main"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../creating.html" title="Creating A Collada Object"
+          <a href="../changelog.html" title="Changelog"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">pycollada v0.2 documentation</a> &raquo;</li> 
+        <li><a href="../index.html">pycollada v0.3 documentation</a> &raquo;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../creating.html"
-                        title="previous chapter">Creating A Collada Object</a></p>
+  <p class="topless"><a href="../changelog.html"
+                        title="previous chapter">Changelog</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="main.html"
                         title="next chapter">Main</a></p>
@@ -88,6 +88,12 @@
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.DaeObject.html">collada.DaeObject</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="asset.html">Asset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/collada.asset.Contributor.html">collada.asset.Contributor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/collada.asset.Asset.html">collada.asset.Asset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/collada.asset.UP_AXIS.html">collada.asset.UP_AXIS</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="geometry.html">Geometry</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.geometry.Geometry.html">collada.geometry.Geometry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.primitive.Primitive.html">collada.primitive.Primitive</a></li>
@@ -111,6 +117,8 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="camera.html">Camera</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.camera.Camera.html">collada.camera.Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/collada.camera.PerspectiveCamera.html">collada.camera.PerspectiveCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/collada.camera.OrthographicCamera.html">collada.camera.OrthographicCamera</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="light.html">Light</a><ul>
@@ -142,6 +150,7 @@
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.scene.Scene.html">collada.scene.Scene</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.scene.SceneNode.html">collada.scene.SceneNode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.scene.Node.html">collada.scene.Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/collada.scene.NodeNode.html">collada.scene.NodeNode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.scene.GeometryNode.html">collada.scene.GeometryNode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.scene.ControllerNode.html">collada.scene.ControllerNode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.scene.MaterialNode.html">collada.scene.MaterialNode</a></li>
@@ -164,6 +173,8 @@
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.polylist.BoundPolylist.html">collada.polylist.BoundPolylist</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.polygons.BoundPolygons.html">collada.polygons.BoundPolygons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.camera.BoundCamera.html">collada.camera.BoundCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/collada.camera.BoundPerspectiveCamera.html">collada.camera.BoundPerspectiveCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/collada.camera.BoundOrthographicCamera.html">collada.camera.BoundOrthographicCamera</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.controller.BoundController.html">collada.controller.BoundController</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.controller.BoundMorph.html">collada.controller.BoundMorph</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/collada.controller.BoundSkin.html">collada.controller.BoundSkin</a></li>
@@ -231,9 +242,9 @@
           <a href="main.html" title="Main"
              >next</a> |</li>
         <li class="right" >
-          <a href="../creating.html" title="Creating A Collada Object"
+          <a href="../changelog.html" title="Changelog"
              >previous</a> |</li>
-        <li><a href="../index.html">pycollada v0.2 documentation</a> &raquo;</li> 
+        <li><a href="../index.html">pycollada v0.3 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

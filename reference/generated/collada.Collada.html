@@ -7,13 +7,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>collada.Collada &mdash; pycollada v0.2 documentation</title>
+    <title>collada.Collada &mdash; pycollada v0.3 documentation</title>
     <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.2',
+        VERSION:     '0.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -22,7 +22,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="top" title="pycollada v0.3 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../index.html" />
     <link rel="next" title="collada.DaeBrokenRefError" href="collada.DaeBrokenRefError.html" />
     <link rel="prev" title="collada" href="collada.html" /> 
@@ -43,7 +43,7 @@
         <li class="right" >
           <a href="collada.html" title="collada"
              accesskey="P">previous</a> |</li>
-        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+        <li><a href="../../index.html">pycollada v0.3 documentation</a> &raquo;</li>
           <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
       </ul>
     </div>
@@ -85,12 +85,12 @@
 <h1>collada.Collada<a class="headerlink" href="#collada-collada" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="collada.Collada">
-<em class="property">class </em><tt class="descclassname">collada.</tt><tt class="descname">Collada</tt><big>(</big><em>filename=None</em>, <em>ignore=None</em>, <em>aux_file_loader=None</em><big>)</big><a class="headerlink" href="#collada.Collada" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">collada.</tt><tt class="descname">Collada</tt><big>(</big><em>filename=None</em>, <em>ignore=None</em>, <em>aux_file_loader=None</em>, <em>zip_filename=None</em><big>)</big><a class="headerlink" href="#collada.Collada" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">object</span></tt></p>
 <p>This is the main class used to create and load collada documents</p>
 <dl class="method">
 <dt id="collada.Collada.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>filename=None</em>, <em>ignore=None</em>, <em>aux_file_loader=None</em><big>)</big><a class="headerlink" href="#collada.Collada.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>filename=None</em>, <em>ignore=None</em>, <em>aux_file_loader=None</em>, <em>zip_filename=None</em><big>)</big><a class="headerlink" href="#collada.Collada.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load collada data from filename or file like object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -111,6 +111,9 @@ loading from a zip file. If these files are coming from another source
 a function that given a filename, returns the binary data in the file.
 If <cite>filename</cite> is <tt class="xref docutils literal"><span class="pre">None</span></tt>, you must set this parameter if you want to
 load auxiliary files.</li>
+<li><strong>zip_filename</strong> (<em>str</em>) &#8211; If the file being loaded is a zip archive, you can set this parameter
+to indicate the file within the archive that should be loaded. If not
+set, a file that ends with .dae will be searched.</li>
 </ul>
 </td>
 </tr>
@@ -125,7 +128,7 @@ load auxiliary files.</li>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr><td><a class="reference internal" href="#collada.Collada.__init__" title="collada.Collada.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>([filename,&nbsp;ignore,&nbsp;aux_file_loader])</td>
+<tr><td><a class="reference internal" href="#collada.Collada.__init__" title="collada.Collada.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>([filename,&nbsp;ignore,&nbsp;...])</td>
 <td>Load collada data from filename or file like object.</td>
 </tr>
 <tr><td><tt class="xref py py-obj docutils literal"><span class="pre">handleError</span></tt>(error)</td>
@@ -140,18 +143,6 @@ load auxiliary files.</li>
 </tbody>
 </table>
 <dl class="attribute">
-<dt id="collada.Collada.errors">
-<tt class="descname">errors</tt><a class="headerlink" href="#collada.Collada.errors" title="Permalink to this definition">¶</a></dt>
-<dd><p>List of <a class="reference internal" href="collada.DaeError.html#collada.DaeError" title="collada.DaeError"><tt class="xref py py-class docutils literal"><span class="pre">collada.DaeError</span></tt></a> objects representing errors encounterd while loading collada file</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="collada.Collada.assetInfo">
-<tt class="descname">assetInfo</tt><a class="headerlink" href="#collada.Collada.assetInfo" title="Permalink to this definition">¶</a></dt>
-<dd><p>A dictionary structure that stores asset information coming from &lt;asset&gt; tag</p>
-</dd></dl>
-
-<dl class="attribute">
 <dt id="collada.Collada.geometries">
 <tt class="descname">geometries</tt><a class="headerlink" href="#collada.Collada.geometries" title="Permalink to this definition">¶</a></dt>
 <dd><p>A list of <a class="reference internal" href="collada.geometry.Geometry.html#collada.geometry.Geometry" title="collada.geometry.Geometry"><tt class="xref py py-class docutils literal"><span class="pre">collada.geometry.Geometry</span></tt></a> objects. Can also be indexed by id</p>
@@ -161,6 +152,12 @@ load auxiliary files.</li>
 <dt id="collada.Collada.controllers">
 <tt class="descname">controllers</tt><a class="headerlink" href="#collada.Collada.controllers" title="Permalink to this definition">¶</a></dt>
 <dd><p>A list of <a class="reference internal" href="collada.controller.Controller.html#collada.controller.Controller" title="collada.controller.Controller"><tt class="xref py py-class docutils literal"><span class="pre">collada.controller.Controller</span></tt></a> objects. Can also be indexed by id</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.Collada.animations">
+<tt class="descname">animations</tt><a class="headerlink" href="#collada.Collada.animations" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <tt class="xref py py-class docutils literal"><span class="pre">collada.animation.Animation</span></tt> objects. Can also be indexed by id</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -206,9 +203,21 @@ load auxiliary files.</li>
 </dd></dl>
 
 <dl class="attribute">
+<dt id="collada.Collada.errors">
+<tt class="descname">errors</tt><a class="headerlink" href="#collada.Collada.errors" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of <a class="reference internal" href="collada.DaeError.html#collada.DaeError" title="collada.DaeError"><tt class="xref py py-class docutils literal"><span class="pre">collada.DaeError</span></tt></a> objects representing errors encounterd while loading collada file</p>
+</dd></dl>
+
+<dl class="attribute">
 <dt id="collada.Collada.scene">
 <tt class="descname">scene</tt><a class="headerlink" href="#collada.Collada.scene" title="Permalink to this definition">¶</a></dt>
 <dd><p>The default scene. This is either an instance of <a class="reference internal" href="collada.scene.Scene.html#collada.scene.Scene" title="collada.scene.Scene"><tt class="xref py py-class docutils literal"><span class="pre">collada.scene.Scene</span></tt></a> or <cite>None</cite>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.Collada.assetInfo">
+<tt class="descname">assetInfo</tt><a class="headerlink" href="#collada.Collada.assetInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instance of <a class="reference internal" href="collada.asset.Asset.html#collada.asset.Asset" title="collada.asset.Asset"><tt class="xref py py-class docutils literal"><span class="pre">collada.asset.Asset</span></tt></a> containing asset information</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -272,7 +281,7 @@ calls <a class="reference internal" href="#collada.Collada.save" title="collada.
         <li class="right" >
           <a href="collada.html" title="collada"
              >previous</a> |</li>
-        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+        <li><a href="../../index.html">pycollada v0.3 documentation</a> &raquo;</li>
           <li><a href="../index.html" >API Reference</a> &raquo;</li> 
       </ul>
     </div>

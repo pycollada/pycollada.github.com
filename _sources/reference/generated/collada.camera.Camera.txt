@@ -5,6 +5,7 @@ collada.camera.Camera
 
 .. autoclass:: Camera
 
+   
    .. inheritance-diagram:: collada.camera
       :parts: 1
    .. automethod:: __init__
@@ -14,13 +15,5 @@ collada.camera.Camera
 
    .. autosummary::
    
-      ~Camera.__init__
-      ~Camera.bind
       ~Camera.load
       ~Camera.save
-   
-   
-
-   
-   
-   

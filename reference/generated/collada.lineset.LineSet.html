@@ -7,13 +7,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>collada.lineset.LineSet &mdash; pycollada v0.2 documentation</title>
+    <title>collada.lineset.LineSet &mdash; pycollada v0.3 documentation</title>
     <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.2',
+        VERSION:     '0.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -22,7 +22,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="top" title="pycollada v0.3 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../index.html" />
     <link rel="next" title="collada.material" href="collada.material.html" />
     <link rel="prev" title="collada.lineset.Line" href="collada.lineset.Line.html" /> 
@@ -43,7 +43,7 @@
         <li class="right" >
           <a href="collada.lineset.Line.html" title="collada.lineset.Line"
              accesskey="P">previous</a> |</li>
-        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+        <li><a href="../../index.html">pycollada v0.3 documentation</a> &raquo;</li>
           <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
       </ul>
     </div>
@@ -96,13 +96,13 @@ returns the number of lines in the set. <tt class="docutils literal"><span class
 line in the set.</li>
 </ul>
 <p class="graphviz">
-<img src="../../_images/inheritance-0ebc9d3210fb17b80b83b946e20f936c5c98069b.png" alt="Inheritance diagram of collada.lineset.LineSet, collada.triangleset.TriangleSet, collada.polylist.Polylist, collada.polygons.Polygons" usemap="#inheritanced10274bdba" class="inheritance"/>
+<img src="../../_images/inheritance-76690887323fa2a2688bfd9054386b4e98ff9209.png" alt="Inheritance diagram of collada.lineset.LineSet, collada.triangleset.TriangleSet, collada.polylist.Polylist, collada.polygons.Polygons" usemap="#inheritanced10274bdba" class="inheritance"/>
 <map id="inheritanced10274bdba" name="inheritanced10274bdba">
-<area shape="rect" id="node1" href="collada.DaeObject.html#collada.DaeObject" title="DaeObject" alt="" coords="7,55,95,83"/>
-<area shape="rect" id="node2" href="collada.primitive.Primitive.html#collada.primitive.Primitive" title="Primitive" alt="" coords="144,55,221,83"/>
+<area shape="rect" id="node1" href="collada.primitive.Primitive.html#collada.primitive.Primitive" title="Primitive" alt="" coords="144,55,221,83"/>
 <area shape="rect" id="node5" href="collada.polylist.Polylist.html#collada.polylist.Polylist" title="Polylist" alt="" coords="280,5,352,33"/>
-<area shape="rect" id="node7" href="collada.triangleset.TriangleSet.html#collada.triangleset.TriangleSet" title="TriangleSet" alt="" coords="271,55,361,83"/>
-<area shape="rect" id="node9" href="#collada.lineset.LineSet" title="LineSet" alt="" coords="280,106,352,134"/>
+<area shape="rect" id="node7" href="#collada.lineset.LineSet" title="LineSet" alt="" coords="280,55,352,83"/>
+<area shape="rect" id="node10" href="collada.triangleset.TriangleSet.html#collada.triangleset.TriangleSet" title="TriangleSet" alt="" coords="271,106,361,134"/>
+<area shape="rect" id="node2" href="collada.DaeObject.html#collada.DaeObject" title="DaeObject" alt="" coords="7,55,95,83"/>
 <area shape="rect" id="node4" href="collada.polygons.Polygons.html#collada.polygons.Polygons" title="Polygons" alt="" coords="412,5,489,33"/>
 </map>
 </p>
@@ -174,6 +174,12 @@ creating a geometry instance.</p>
 <dd><p>Create a bound line set from this line set, transform and material mapping</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="collada.lineset.LineSet.getInputList">
+<tt class="descname">getInputList</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.lineset.LineSet.getInputList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a <a class="reference internal" href="collada.source.InputList.html#collada.source.InputList" title="collada.source.InputList"><tt class="xref py py-class docutils literal"><span class="pre">collada.source.InputList</span></tt></a> representing the inputs from a primitive</p>
+</dd></dl>
+
 <dl class="attribute">
 <dt id="collada.lineset.LineSet.normal">
 <tt class="descname">normal</tt><a class="headerlink" href="#collada.lineset.LineSet.normal" title="Permalink to this definition">¶</a></dt>
@@ -187,6 +193,23 @@ primitive&#8217;s normal source array.</p>
 <dd><p>Read-only numpy.array of size Nx3 where N is the number of vertices in the primitive.
 To get the actual normal values, one can use this array to select into the normals
 array, e.g. <tt class="docutils literal"><span class="pre">normal[normal_index]</span></tt>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.lineset.LineSet.texbinormal_indexset">
+<tt class="descname">texbinormal_indexset</tt><a class="headerlink" href="#collada.lineset.LineSet.texbinormal_indexset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-only tuple of texture binormal index arrays. Each value is a numpy.array of size
+Nx3 where N is the number of vertices in the primitive. To get the actual texture
+binormals, one can use the array to select into the texbinormalset array, e.g.
+<tt class="docutils literal"><span class="pre">texbinormalset[0][texbinormal_indexset[0]]</span></tt> would select the first set of texture
+binormals.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.lineset.LineSet.texbinormalset">
+<tt class="descname">texbinormalset</tt><a class="headerlink" href="#collada.lineset.LineSet.texbinormalset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-only tuple of texture binormal arrays. Each value is a numpy.array of size
+Nx3 where N is the number of texture binormals in the primitive&#8217;s source array.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -204,6 +227,23 @@ coordinates.</p>
 <tt class="descname">texcoordset</tt><a class="headerlink" href="#collada.lineset.LineSet.texcoordset" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read-only tuple of texture coordinate arrays. Each value is a numpy.array of size
 Nx2 where N is the number of texture coordinates in the primitive&#8217;s source array.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.lineset.LineSet.textangent_indexset">
+<tt class="descname">textangent_indexset</tt><a class="headerlink" href="#collada.lineset.LineSet.textangent_indexset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-only tuple of texture tangent index arrays. Each value is a numpy.array of size
+Nx3 where N is the number of vertices in the primitive. To get the actual texture
+tangents, one can use the array to select into the textangentset array, e.g.
+<tt class="docutils literal"><span class="pre">textangentset[0][textangent_indexset[0]]</span></tt> would select the first set of texture
+tangents.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.lineset.LineSet.textangentset">
+<tt class="descname">textangentset</tt><a class="headerlink" href="#collada.lineset.LineSet.textangentset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read-only tuple of texture tangent arrays. Each value is a numpy.array of size
+Nx3 where N is the number of texture tangents in the primitive&#8217;s source array.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -246,7 +286,7 @@ array, e.g. <tt class="docutils literal"><span class="pre">vertex[vertex_index]<
         <li class="right" >
           <a href="collada.lineset.Line.html" title="collada.lineset.Line"
              >previous</a> |</li>
-        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+        <li><a href="../../index.html">pycollada v0.3 documentation</a> &raquo;</li>
           <li><a href="../index.html" >API Reference</a> &raquo;</li> 
       </ul>
     </div>

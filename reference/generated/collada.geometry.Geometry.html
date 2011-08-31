@@ -7,13 +7,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>collada.geometry.Geometry &mdash; pycollada v0.2 documentation</title>
+    <title>collada.geometry.Geometry &mdash; pycollada v0.3 documentation</title>
     <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.2',
+        VERSION:     '0.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -22,7 +22,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="pycollada v0.2 documentation" href="../../index.html" />
+    <link rel="top" title="pycollada v0.3 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../index.html" />
     <link rel="next" title="collada.light" href="collada.light.html" />
     <link rel="prev" title="collada.geometry.BoundGeometry" href="collada.geometry.BoundGeometry.html" /> 
@@ -43,7 +43,7 @@
         <li class="right" >
           <a href="collada.geometry.BoundGeometry.html" title="collada.geometry.BoundGeometry"
              accesskey="P">previous</a> |</li>
-        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+        <li><a href="../../index.html">pycollada v0.3 documentation</a> &raquo;</li>
           <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
       </ul>
     </div>
@@ -85,7 +85,7 @@
 <h1>collada.geometry.Geometry<a class="headerlink" href="#collada-geometry-geometry" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="collada.geometry.Geometry">
-<em class="property">class </em><tt class="descclassname">collada.geometry.</tt><tt class="descname">Geometry</tt><big>(</big><em>collada</em>, <em>id</em>, <em>name</em>, <em>sourcebyid</em>, <em>primitives=None</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">collada.geometry.</tt><tt class="descname">Geometry</tt><big>(</big><em>collada</em>, <em>id</em>, <em>name</em>, <em>sourcebyid</em>, <em>primitives=None</em>, <em>xmlnode=None</em>, <em>double_sided=False</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="collada.DaeObject.html#collada.DaeObject" title="collada.DaeObject"><tt class="xref py py-class docutils literal"><span class="pre">collada.DaeObject</span></tt></a></p>
 <p>A class containing the data coming from a COLLADA &lt;geometry&gt; tag</p>
 <p class="graphviz">
@@ -98,7 +98,7 @@
 </p>
 <dl class="method">
 <dt id="collada.geometry.Geometry.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>collada</em>, <em>id</em>, <em>name</em>, <em>sourcebyid</em>, <em>primitives=None</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>collada</em>, <em>id</em>, <em>name</em>, <em>sourcebyid</em>, <em>primitives=None</em>, <em>xmlnode=None</em>, <em>double_sided=False</em><big>)</big><a class="headerlink" href="#collada.geometry.Geometry.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a geometry instance</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -115,6 +115,7 @@ Do not set this argument manually. Instead, create a
 <a class="reference internal" href="#collada.geometry.Geometry" title="collada.geometry.Geometry"><tt class="xref py py-class docutils literal"><span class="pre">collada.geometry.Geometry</span></tt></a> first and then append
 to <a class="reference internal" href="#collada.geometry.Geometry.primitives" title="collada.geometry.Geometry.primitives"><tt class="xref py py-attr docutils literal"><span class="pre">primitives</span></tt></a> with the <cite>create*</cite> functions.</li>
 <li><strong>xmlnode</strong> &#8211; When loaded, the xmlnode it comes from.</li>
+<li><strong>double_sided</strong> (<em>bool</em>) &#8211; Whether or not the geometry should be rendered double sided</li>
 </ul>
 </td>
 </tr>
@@ -171,6 +172,12 @@ to <a class="reference internal" href="#collada.geometry.Geometry.primitives" ti
 <dt id="collada.geometry.Geometry.name">
 <tt class="descname">name</tt><a class="headerlink" href="#collada.geometry.Geometry.name" title="Permalink to this definition">¶</a></dt>
 <dd><p>The text string naming the geometry</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.geometry.Geometry.double_sided">
+<tt class="descname">double_sided</tt><a class="headerlink" href="#collada.geometry.Geometry.double_sided" title="Permalink to this definition">¶</a></dt>
+<dd><p>A boolean indicating whether or not the geometry should be rendered double sided</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -345,7 +352,7 @@ scene</li>
         <li class="right" >
           <a href="collada.geometry.BoundGeometry.html" title="collada.geometry.BoundGeometry"
              >previous</a> |</li>
-        <li><a href="../../index.html">pycollada v0.2 documentation</a> &raquo;</li>
+        <li><a href="../../index.html">pycollada v0.3 documentation</a> &raquo;</li>
           <li><a href="../index.html" >API Reference</a> &raquo;</li> 
       </ul>
     </div>

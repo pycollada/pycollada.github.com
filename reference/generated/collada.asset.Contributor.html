@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>collada.asset.Contributor &mdash; pycollada v0.3 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="pycollada v0.3 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../index.html" />
+    <link rel="next" title="collada.asset.UP_AXIS" href="collada.asset.UP_AXIS.html" />
+    <link rel="prev" title="collada.asset.Asset" href="collada.asset.Asset.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.asset.UP_AXIS.html" title="collada.asset.UP_AXIS"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="collada.asset.Asset.html" title="collada.asset.Asset"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.3 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="collada.asset.Asset.html"
+                        title="previous chapter">collada.asset.Asset</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collada.asset.UP_AXIS.html"
+                        title="next chapter">collada.asset.UP_AXIS</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/reference/generated/collada.asset.Contributor.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="collada-asset-contributor">
+<h1>collada.asset.Contributor<a class="headerlink" href="#collada-asset-contributor" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="collada.asset.Contributor">
+<em class="property">class </em><tt class="descclassname">collada.asset.</tt><tt class="descname">Contributor</tt><big>(</big><em>author=None</em>, <em>authoring_tool=None</em>, <em>comments=None</em>, <em>copyright=None</em>, <em>source_data=None</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.asset.Contributor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="collada.DaeObject.html#collada.DaeObject" title="collada.DaeObject"><tt class="xref py py-class docutils literal"><span class="pre">collada.DaeObject</span></tt></a></p>
+<p>Defines authoring information for asset management</p>
+<dl class="method">
+<dt id="collada.asset.Contributor.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>author=None</em>, <em>authoring_tool=None</em>, <em>comments=None</em>, <em>copyright=None</em>, <em>source_data=None</em>, <em>xmlnode=None</em><big>)</big><a class="headerlink" href="#collada.asset.Contributor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new contributor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>author</strong> (<em>str</em>) &#8211; The author&#8217;s name</li>
+<li><strong>authoring_tool</strong> (<em>str</em>) &#8211; Name of the authoring tool</li>
+<li><strong>comments</strong> (<em>str</em>) &#8211; Comments from the contributor</li>
+<li><strong>copyright</strong> (<em>str</em>) &#8211; Copyright information</li>
+<li><strong>source_data</strong> (<em>str</em>) &#8211; URI referencing the source data</li>
+<li><strong>xmlnode</strong> &#8211; If loaded from xml, the xml node</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="#collada.asset.Contributor.__init__" title="collada.asset.Contributor.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>([author,&nbsp;authoring_tool,&nbsp;comments,&nbsp;...])</td>
+<td>Create a new contributor</td>
+</tr>
+<tr><td><tt class="xref py py-obj docutils literal"><span class="pre">load</span></tt>(collada,&nbsp;localscope,&nbsp;node)</td>
+<td></td>
+</tr>
+<tr><td><a class="reference internal" href="#collada.asset.Contributor.save" title="collada.asset.Contributor.save"><tt class="xref py py-obj docutils literal"><span class="pre">save</span></tt></a>()</td>
+<td>Saves the contributor info back to <a class="reference internal" href="#collada.asset.Contributor.xmlnode" title="collada.asset.Contributor.xmlnode"><tt class="xref py py-attr docutils literal"><span class="pre">xmlnode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="collada.asset.Contributor.author">
+<tt class="descname">author</tt><a class="headerlink" href="#collada.asset.Contributor.author" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains a string with the author&#8217;s name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.asset.Contributor.authoring_tool">
+<tt class="descname">authoring_tool</tt><a class="headerlink" href="#collada.asset.Contributor.authoring_tool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains a string with the name of the authoring tool.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.asset.Contributor.comments">
+<tt class="descname">comments</tt><a class="headerlink" href="#collada.asset.Contributor.comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains a string with comments from this contributor.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.asset.Contributor.copyright">
+<tt class="descname">copyright</tt><a class="headerlink" href="#collada.asset.Contributor.copyright" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains a string with copyright information.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.asset.Contributor.source_data">
+<tt class="descname">source_data</tt><a class="headerlink" href="#collada.asset.Contributor.source_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains a string with a URI referencing the source data for this asset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="collada.asset.Contributor.xmlnode">
+<tt class="descname">xmlnode</tt><a class="headerlink" href="#collada.asset.Contributor.xmlnode" title="Permalink to this definition">¶</a></dt>
+<dd><p>ElementTree representation of the contributor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="collada.asset.Contributor.save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#collada.asset.Contributor.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the contributor info back to <a class="reference internal" href="#collada.asset.Contributor.xmlnode" title="collada.asset.Contributor.xmlnode"><tt class="xref py py-attr docutils literal"><span class="pre">xmlnode</span></tt></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="collada.asset.UP_AXIS.html" title="collada.asset.UP_AXIS"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="collada.asset.Asset.html" title="collada.asset.Asset"
+             >previous</a> |</li>
+        <li><a href="../../index.html">pycollada v0.3 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API Reference</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Jeff Terrace and contributors.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
