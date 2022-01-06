@@ -1,8 +1,0 @@
-<map id="inheritanced10274bdba" name="inheritanced10274bdba">
-<area shape="rect" id="node1" href="generated/collada.primitive.Primitive.html#collada.primitive.Primitive" title="Primitive" alt="" coords="144,55,221,83"/>
-<area shape="rect" id="node5" href="generated/collada.polylist.Polylist.html#collada.polylist.Polylist" title="Polylist" alt="" coords="280,5,352,33"/>
-<area shape="rect" id="node7" href="generated/collada.lineset.LineSet.html#collada.lineset.LineSet" title="LineSet" alt="" coords="280,55,352,83"/>
-<area shape="rect" id="node10" href="generated/collada.triangleset.TriangleSet.html#collada.triangleset.TriangleSet" title="TriangleSet" alt="" coords="271,106,361,134"/>
-<area shape="rect" id="node2" href="generated/collada.DaeObject.html#collada.DaeObject" title="DaeObject" alt="" coords="7,55,95,83"/>
-<area shape="rect" id="node4" href="generated/collada.polygons.Polygons.html#collada.polygons.Polygons" title="Polygons" alt="" coords="412,5,489,33"/>
-</map>
